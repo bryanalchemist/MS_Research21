@@ -5,12 +5,15 @@ To create fat bands, do the ff:
   4. projwfc.x<*proj.in>*proj.out
   5. Make a soft link by:
       ln -s *up *.bands.dat.proj
-  6. plotband.x<*plot.in        #vary this depending on what orbital you want to compute
-  7. sumplot.sh  #edit the code according to step 6
-  8. Plot (you can run fatrun_sz.py but first modify fatrun_sz.py accordingly)
+  6. Use list.sh to list all valence electrons flags on an outputfile specified by list.sh
+  7. Use select.sh to select specific orbitals the step 6's output. Use the 1st column output information of select.sh 
+      as  2nd row input in plotband.x. (this step identifies which among the data is from a certain orbital)
+  8. plotband.x<*plot.in        #vary this depending on what orbital you want to compute
+  9. sumplot.sh  #edit the code according to step 6
+  10. Plot (you can run fatrun_sz.py but first modify fatrun_sz.py accordingly)
 
 To know the orbital contributions at certain energy levels at k-space symmetry points:
-  1. Do the above steps (atleast up to step 7).
+  1. Do the above steps (atleast up to step 9).
   2. Identify the k-values of the symmetry points using your *.nscf.in input file
      Example: (pay attention at the  4th column of *nscf.in K_POINTS flag
       
