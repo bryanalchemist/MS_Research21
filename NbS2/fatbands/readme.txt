@@ -1,4 +1,4 @@
-To create fat bands do the ff:
+To create fat bands, do the ff:
   1. scf calculations
   2. nscf calculations (set calc= 'bands')
   3. bands.x <*bands.in>*bands.out
