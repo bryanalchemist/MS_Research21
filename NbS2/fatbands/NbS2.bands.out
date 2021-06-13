@@ -1,0 +1,782 @@
+
+     Program BANDS v.6.6 starts on 12Jun2021 at 23:31:39 
+
+     This program is part of the open-source Quantum ESPRESSO suite
+     for quantum simulation of materials; please cite
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 21 395502 (2009);
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 29 465901 (2017);
+          URL http://www.quantum-espresso.org", 
+     in publications or presentations arising from this work. More details at
+     http://www.quantum-espresso.org/quote
+
+     Parallel version (MPI), running on     1 processors
+
+     MPI processes distributed on     1 nodes
+     Fft bands division:     nmany     =       1
+
+     Reading xml data from directory:
+
+     ./tmp/NbS2.save/
+     file Nb.pz-spn-kjpaw_psl.1.0.0.UPF: wavefunction(s)  4S 4P 4D renormalized
+     file S.pz-n-kjpaw_psl.0.1.UPF: wavefunction(s)  3P renormalized
+
+     IMPORTANT: XC functional enforced from input :
+     Exchange-correlation= PZ
+                           (   1   1   0   0   0   0   0)
+     Any further DFT definition will be discarded
+     Please, verify this is what you really want
+
+
+     G-vector sticks info
+     --------------------
+     sticks:   dense  smooth     PW     G-vecs:    dense   smooth      PW
+     Sum        1069     421    121               110449    28023    4675
+
+
+     negative rho (up, down):  1.035E-04 0.000E+00
+     Reading collected, re-writing distributed wavefunctions
+     high-symmetry point:  0.0000 0.0000 0.1262   x coordinate   0.0000
+     high-symmetry point:  0.0000 0.5774 0.1262   x coordinate   0.5774
+     high-symmetry point:  0.3333 0.5773 0.1262   x coordinate   0.9107
+     high-symmetry point:  0.0000 0.0000 0.1262   x coordinate   1.5773
+
+     Plottable bands (eV) written to file NbS2.bands.dat.gnu
+     Bands written to file NbS2.bands.dat
+
+ **************************************************************************
+
+                    xk=(   0.00000,   0.00000,   0.12620  )
+
+     zone border point and non-symmorphic group 
+     symmetry decomposition not available
+
+ **************************************************************************
+
+ **************************************************************************
+
+                    xk=(   0.00000,   0.01925,   0.12620  )
+
+     zone border point and non-symmorphic group 
+     symmetry decomposition not available
+
+ **************************************************************************
+
+ **************************************************************************
+
+                    xk=(   0.00000,   0.03849,   0.12620  )
+
+     zone border point and non-symmorphic group 
+     symmetry decomposition not available
+
+ **************************************************************************
+
+ **************************************************************************
+
+                    xk=(   0.00000,   0.05774,   0.12620  )
+
+     zone border point and non-symmorphic group 
+     symmetry decomposition not available
+
+ **************************************************************************
+
+ **************************************************************************
+
+                    xk=(   0.00000,   0.07698,   0.12620  )
+
+     zone border point and non-symmorphic group 
+     symmetry decomposition not available
+
+ **************************************************************************
+
+ **************************************************************************
+
+                    xk=(   0.00000,   0.09623,   0.12620  )
+
+     zone border point and non-symmorphic group 
+     symmetry decomposition not available
+
+ **************************************************************************
+
+ **************************************************************************
+
+                    xk=(   0.00000,   0.11547,   0.12620  )
+
+     zone border point and non-symmorphic group 
+     symmetry decomposition not available
+
+ **************************************************************************
+
+ **************************************************************************
+
+                    xk=(   0.00000,   0.13472,   0.12620  )
+
+     zone border point and non-symmorphic group 
+     symmetry decomposition not available
+
+ **************************************************************************
+
+ **************************************************************************
+
+                    xk=(   0.00000,   0.15396,   0.12620  )
+
+     zone border point and non-symmorphic group 
+     symmetry decomposition not available
+
+ **************************************************************************
+
+ **************************************************************************
+
+                    xk=(   0.00000,   0.17321,   0.12620  )
+
+     zone border point and non-symmorphic group 
+     symmetry decomposition not available
+
+ **************************************************************************
+
+ **************************************************************************
+
+                    xk=(   0.00000,   0.19245,   0.12620  )
+
+     zone border point and non-symmorphic group 
+     symmetry decomposition not available
+
+ **************************************************************************
+
+ **************************************************************************
+
+                    xk=(   0.00000,   0.21170,   0.12620  )
+
+     zone border point and non-symmorphic group 
+     symmetry decomposition not available
+
+ **************************************************************************
+
+ **************************************************************************
+
+                    xk=(   0.00000,   0.23094,   0.12620  )
+
+     zone border point and non-symmorphic group 
+     symmetry decomposition not available
+
+ **************************************************************************
+
+ **************************************************************************
+
+                    xk=(   0.00000,   0.25019,   0.12620  )
+
+     zone border point and non-symmorphic group 
+     symmetry decomposition not available
+
+ **************************************************************************
+
+ **************************************************************************
+
+                    xk=(   0.00000,   0.26943,   0.12620  )
+
+     zone border point and non-symmorphic group 
+     symmetry decomposition not available
+
+ **************************************************************************
+
+ **************************************************************************
+
+                    xk=(   0.00000,   0.28868,   0.12620  )
+
+     zone border point and non-symmorphic group 
+     symmetry decomposition not available
+
+ **************************************************************************
+
+ **************************************************************************
+
+                    xk=(   0.00000,   0.30792,   0.12620  )
+
+     zone border point and non-symmorphic group 
+     symmetry decomposition not available
+
+ **************************************************************************
+
+ **************************************************************************
+
+                    xk=(   0.00000,   0.32717,   0.12620  )
+
+     zone border point and non-symmorphic group 
+     symmetry decomposition not available
+
+ **************************************************************************
+
+ **************************************************************************
+
+                    xk=(   0.00000,   0.34641,   0.12620  )
+
+     zone border point and non-symmorphic group 
+     symmetry decomposition not available
+
+ **************************************************************************
+
+ **************************************************************************
+
+                    xk=(   0.00000,   0.36566,   0.12620  )
+
+     zone border point and non-symmorphic group 
+     symmetry decomposition not available
+
+ **************************************************************************
+
+ **************************************************************************
+
+                    xk=(   0.00000,   0.38490,   0.12620  )
+
+     zone border point and non-symmorphic group 
+     symmetry decomposition not available
+
+ **************************************************************************
+
+ **************************************************************************
+
+                    xk=(   0.00000,   0.40415,   0.12620  )
+
+     zone border point and non-symmorphic group 
+     symmetry decomposition not available
+
+ **************************************************************************
+
+ **************************************************************************
+
+                    xk=(   0.00000,   0.42339,   0.12620  )
+
+     zone border point and non-symmorphic group 
+     symmetry decomposition not available
+
+ **************************************************************************
+
+ **************************************************************************
+
+                    xk=(   0.00000,   0.44264,   0.12620  )
+
+     zone border point and non-symmorphic group 
+     symmetry decomposition not available
+
+ **************************************************************************
+
+ **************************************************************************
+
+                    xk=(   0.00000,   0.46188,   0.12620  )
+
+     zone border point and non-symmorphic group 
+     symmetry decomposition not available
+
+ **************************************************************************
+
+ **************************************************************************
+
+                    xk=(   0.00000,   0.48113,   0.12620  )
+
+     zone border point and non-symmorphic group 
+     symmetry decomposition not available
+
+ **************************************************************************
+
+ **************************************************************************
+
+                    xk=(   0.00000,   0.50037,   0.12620  )
+
+     zone border point and non-symmorphic group 
+     symmetry decomposition not available
+
+ **************************************************************************
+
+ **************************************************************************
+
+                    xk=(   0.00000,   0.51962,   0.12620  )
+
+     zone border point and non-symmorphic group 
+     symmetry decomposition not available
+
+ **************************************************************************
+
+ **************************************************************************
+
+                    xk=(   0.00000,   0.53886,   0.12620  )
+
+     zone border point and non-symmorphic group 
+     symmetry decomposition not available
+
+ **************************************************************************
+
+ **************************************************************************
+
+                    xk=(   0.00000,   0.55811,   0.12620  )
+
+     zone border point and non-symmorphic group 
+     symmetry decomposition not available
+
+ **************************************************************************
+
+ **************************************************************************
+
+                    xk=(   0.00000,   0.57735,   0.12620  )
+
+     zone border point and non-symmorphic group 
+     symmetry decomposition not available
+
+ **************************************************************************
+
+ **************************************************************************
+
+                    xk=(   0.02222,   0.57735,   0.12620  )
+
+     zone border point and non-symmorphic group 
+     symmetry decomposition not available
+
+ **************************************************************************
+
+ **************************************************************************
+
+                    xk=(   0.04444,   0.57735,   0.12620  )
+
+     zone border point and non-symmorphic group 
+     symmetry decomposition not available
+
+ **************************************************************************
+
+ **************************************************************************
+
+                    xk=(   0.06667,   0.57735,   0.12620  )
+
+     zone border point and non-symmorphic group 
+     symmetry decomposition not available
+
+ **************************************************************************
+
+ **************************************************************************
+
+                    xk=(   0.08889,   0.57735,   0.12620  )
+
+     zone border point and non-symmorphic group 
+     symmetry decomposition not available
+
+ **************************************************************************
+
+ **************************************************************************
+
+                    xk=(   0.11111,   0.57735,   0.12620  )
+
+     zone border point and non-symmorphic group 
+     symmetry decomposition not available
+
+ **************************************************************************
+
+ **************************************************************************
+
+                    xk=(   0.13333,   0.57735,   0.12620  )
+
+     zone border point and non-symmorphic group 
+     symmetry decomposition not available
+
+ **************************************************************************
+
+ **************************************************************************
+
+                    xk=(   0.15555,   0.57735,   0.12620  )
+
+     zone border point and non-symmorphic group 
+     symmetry decomposition not available
+
+ **************************************************************************
+
+ **************************************************************************
+
+                    xk=(   0.17778,   0.57735,   0.12620  )
+
+     zone border point and non-symmorphic group 
+     symmetry decomposition not available
+
+ **************************************************************************
+
+ **************************************************************************
+
+                    xk=(   0.20000,   0.57735,   0.12620  )
+
+     zone border point and non-symmorphic group 
+     symmetry decomposition not available
+
+ **************************************************************************
+
+ **************************************************************************
+
+                    xk=(   0.22222,   0.57735,   0.12620  )
+
+     zone border point and non-symmorphic group 
+     symmetry decomposition not available
+
+ **************************************************************************
+
+ **************************************************************************
+
+                    xk=(   0.24444,   0.57735,   0.12620  )
+
+     zone border point and non-symmorphic group 
+     symmetry decomposition not available
+
+ **************************************************************************
+
+ **************************************************************************
+
+                    xk=(   0.26666,   0.57735,   0.12620  )
+
+     zone border point and non-symmorphic group 
+     symmetry decomposition not available
+
+ **************************************************************************
+
+ **************************************************************************
+
+                    xk=(   0.28889,   0.57735,   0.12620  )
+
+     zone border point and non-symmorphic group 
+     symmetry decomposition not available
+
+ **************************************************************************
+
+ **************************************************************************
+
+                    xk=(   0.31111,   0.57734,   0.12620  )
+
+     zone border point and non-symmorphic group 
+     symmetry decomposition not available
+
+ **************************************************************************
+
+ **************************************************************************
+
+                    xk=(   0.33333,   0.57734,   0.12620  )
+
+     zone border point and non-symmorphic group 
+     symmetry decomposition not available
+
+ **************************************************************************
+
+ **************************************************************************
+
+                    xk=(   0.32381,   0.56085,   0.12620  )
+
+     zone border point and non-symmorphic group 
+     symmetry decomposition not available
+
+ **************************************************************************
+
+ **************************************************************************
+
+                    xk=(   0.31428,   0.54435,   0.12620  )
+
+     zone border point and non-symmorphic group 
+     symmetry decomposition not available
+
+ **************************************************************************
+
+ **************************************************************************
+
+                    xk=(   0.30476,   0.52786,   0.12620  )
+
+     zone border point and non-symmorphic group 
+     symmetry decomposition not available
+
+ **************************************************************************
+
+ **************************************************************************
+
+                    xk=(   0.29524,   0.51136,   0.12620  )
+
+     zone border point and non-symmorphic group 
+     symmetry decomposition not available
+
+ **************************************************************************
+
+ **************************************************************************
+
+                    xk=(   0.28571,   0.49487,   0.12620  )
+
+     zone border point and non-symmorphic group 
+     symmetry decomposition not available
+
+ **************************************************************************
+
+ **************************************************************************
+
+                    xk=(   0.27619,   0.47837,   0.12620  )
+
+     zone border point and non-symmorphic group 
+     symmetry decomposition not available
+
+ **************************************************************************
+
+ **************************************************************************
+
+                    xk=(   0.26666,   0.46188,   0.12620  )
+
+     zone border point and non-symmorphic group 
+     symmetry decomposition not available
+
+ **************************************************************************
+
+ **************************************************************************
+
+                    xk=(   0.25714,   0.44538,   0.12620  )
+
+     zone border point and non-symmorphic group 
+     symmetry decomposition not available
+
+ **************************************************************************
+
+ **************************************************************************
+
+                    xk=(   0.24762,   0.42888,   0.12620  )
+
+     zone border point and non-symmorphic group 
+     symmetry decomposition not available
+
+ **************************************************************************
+
+ **************************************************************************
+
+                    xk=(   0.23809,   0.41239,   0.12620  )
+
+     zone border point and non-symmorphic group 
+     symmetry decomposition not available
+
+ **************************************************************************
+
+ **************************************************************************
+
+                    xk=(   0.22857,   0.39589,   0.12620  )
+
+     zone border point and non-symmorphic group 
+     symmetry decomposition not available
+
+ **************************************************************************
+
+ **************************************************************************
+
+                    xk=(   0.21905,   0.37940,   0.12620  )
+
+     zone border point and non-symmorphic group 
+     symmetry decomposition not available
+
+ **************************************************************************
+
+ **************************************************************************
+
+                    xk=(   0.20952,   0.36290,   0.12620  )
+
+     zone border point and non-symmorphic group 
+     symmetry decomposition not available
+
+ **************************************************************************
+
+ **************************************************************************
+
+                    xk=(   0.20000,   0.34641,   0.12620  )
+
+     zone border point and non-symmorphic group 
+     symmetry decomposition not available
+
+ **************************************************************************
+
+ **************************************************************************
+
+                    xk=(   0.19047,   0.32991,   0.12620  )
+
+     zone border point and non-symmorphic group 
+     symmetry decomposition not available
+
+ **************************************************************************
+
+ **************************************************************************
+
+                    xk=(   0.18095,   0.31342,   0.12620  )
+
+     zone border point and non-symmorphic group 
+     symmetry decomposition not available
+
+ **************************************************************************
+
+ **************************************************************************
+
+                    xk=(   0.17143,   0.29692,   0.12620  )
+
+     zone border point and non-symmorphic group 
+     symmetry decomposition not available
+
+ **************************************************************************
+
+ **************************************************************************
+
+                    xk=(   0.16190,   0.28042,   0.12620  )
+
+     zone border point and non-symmorphic group 
+     symmetry decomposition not available
+
+ **************************************************************************
+
+ **************************************************************************
+
+                    xk=(   0.15238,   0.26393,   0.12620  )
+
+     zone border point and non-symmorphic group 
+     symmetry decomposition not available
+
+ **************************************************************************
+
+ **************************************************************************
+
+                    xk=(   0.14286,   0.24743,   0.12620  )
+
+     zone border point and non-symmorphic group 
+     symmetry decomposition not available
+
+ **************************************************************************
+
+ **************************************************************************
+
+                    xk=(   0.13333,   0.23094,   0.12620  )
+
+     zone border point and non-symmorphic group 
+     symmetry decomposition not available
+
+ **************************************************************************
+
+ **************************************************************************
+
+                    xk=(   0.12381,   0.21444,   0.12620  )
+
+     zone border point and non-symmorphic group 
+     symmetry decomposition not available
+
+ **************************************************************************
+
+ **************************************************************************
+
+                    xk=(   0.11428,   0.19795,   0.12620  )
+
+     zone border point and non-symmorphic group 
+     symmetry decomposition not available
+
+ **************************************************************************
+
+ **************************************************************************
+
+                    xk=(   0.10476,   0.18145,   0.12620  )
+
+     zone border point and non-symmorphic group 
+     symmetry decomposition not available
+
+ **************************************************************************
+
+ **************************************************************************
+
+                    xk=(   0.09524,   0.16496,   0.12620  )
+
+     zone border point and non-symmorphic group 
+     symmetry decomposition not available
+
+ **************************************************************************
+
+ **************************************************************************
+
+                    xk=(   0.08571,   0.14846,   0.12620  )
+
+     zone border point and non-symmorphic group 
+     symmetry decomposition not available
+
+ **************************************************************************
+
+ **************************************************************************
+
+                    xk=(   0.07619,   0.13196,   0.12620  )
+
+     zone border point and non-symmorphic group 
+     symmetry decomposition not available
+
+ **************************************************************************
+
+ **************************************************************************
+
+                    xk=(   0.06667,   0.11547,   0.12620  )
+
+     zone border point and non-symmorphic group 
+     symmetry decomposition not available
+
+ **************************************************************************
+
+ **************************************************************************
+
+                    xk=(   0.05714,   0.09897,   0.12620  )
+
+     zone border point and non-symmorphic group 
+     symmetry decomposition not available
+
+ **************************************************************************
+
+ **************************************************************************
+
+                    xk=(   0.04762,   0.08248,   0.12620  )
+
+     zone border point and non-symmorphic group 
+     symmetry decomposition not available
+
+ **************************************************************************
+
+ **************************************************************************
+
+                    xk=(   0.03809,   0.06598,   0.12620  )
+
+     zone border point and non-symmorphic group 
+     symmetry decomposition not available
+
+ **************************************************************************
+
+ **************************************************************************
+
+                    xk=(   0.02857,   0.04949,   0.12620  )
+
+     zone border point and non-symmorphic group 
+     symmetry decomposition not available
+
+ **************************************************************************
+
+ **************************************************************************
+
+                    xk=(   0.01905,   0.03299,   0.12620  )
+
+     zone border point and non-symmorphic group 
+     symmetry decomposition not available
+
+ **************************************************************************
+
+ **************************************************************************
+
+                    xk=(   0.00952,   0.01650,   0.12620  )
+
+     zone border point and non-symmorphic group 
+     symmetry decomposition not available
+
+ **************************************************************************
+
+ **************************************************************************
+
+                    xk=(   0.00000,   0.00000,   0.12620  )
+
+     zone border point and non-symmorphic group 
+     symmetry decomposition not available
+
+ **************************************************************************
+
+     BANDS        :      3.00s CPU      4.04s WALL
+
+
+   This run was terminated on:  23:31:43  12Jun2021            
+
+=------------------------------------------------------------------------------=
+   JOB DONE.
+=------------------------------------------------------------------------------=

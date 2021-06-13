@@ -1,0 +1,6 @@
+&bands
+prefix = 'NbS2',
+outdir = './tmp',
+lsym =.true.,
+filband = 'NbS2.bands.dat',
+/
