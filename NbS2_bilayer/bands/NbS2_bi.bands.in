@@ -1,0 +1,5 @@
+&bands
+outdir = './tmp',
+prefix = 'NbS2_bi',
+filband = 'NbS2_bi.bands'
+/
