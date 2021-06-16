@@ -1,0 +1,6 @@
+&projwfc
+prefix='NbS2_bi',
+outdir = './tmp',
+lsym = .false.,
+filproj = 'NbS2_bi.proj.dat',
+/
