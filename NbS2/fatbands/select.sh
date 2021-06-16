@@ -1,7 +1,7 @@
 #!/bin/sh
 #This program will search for lines in **.val.list that match suborbitals
 El='Nb'
-l=2 #l param
+l=2 #l param -->> l=0 for s-orbital ; l=1 for p; l=2 for d ;  and so on... 
 m=5 #m param based on QE output
 #for l=1:
 #   1   pz
