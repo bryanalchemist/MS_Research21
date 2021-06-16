@@ -4,7 +4,7 @@ bands - bands structure calculations
 
 ecut - Total energy convergence calculation by varying cut-off Kinetic Energy
 
-fat_bands - Fat bands calculations + orbital content table
+fatbands - Fat bands calculations + orbital content table
 
 kpoint - Total energy convergence calculation by varying nk1 nk2 nk3 (Monkhorst-Pack grid)
 
