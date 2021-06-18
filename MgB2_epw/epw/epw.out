@@ -1,0 +1,2487 @@
+                                                                                      
+                                       ``:oss/                                        
+                           `.+s+.     .+ys--yh+     `./ss+.                           
+                          -sh//yy+`   +yy   +yy    -+h+-oyy                           
+                          -yh- .oyy/.-sh.   .syo-.:sy-  /yh                           
+                 `.-.`    `yh+   -oyyyo.     `/syys:    oys      `.`                  
+               `/+ssys+-` `sh+      `                   oys`   .:osyo`                
+               -yh- ./syyooyo`                          .sys+/oyo--yh/                
+               `yy+    .-:-.                             `-/+/:`  -sh-                
+                /yh.                                              oys                 
+          ``..---hho---------`   .---------..`      `.-----.`    -hd+---.             
+       `./osmNMMMMMMMMMMMMMMMs. +NNMMMMMMMMNNmh+.   yNMMMMMNm-  oNMMMMMNmo++:`        
+       +sy--/sdMMMhyyyyyyyNMMh- .oyNMMmyyyyyhNMMm+` -yMMMdyyo:` .oyyNMMNhs+syy`       
+       -yy/   /MMM+.`-+/``mMMy-   `mMMh:`````.dMMN:` `MMMy-`-dhhy```mMMy:``+hs        
+        -yy+` /MMMo:-mMM+`-oo/.    mMMh:     `dMMN/`  dMMm:`dMMMMy..MMMo-.+yo`        
+         .sys`/MMMMNNMMMs-         mMMmyooooymMMNo:   oMMM/sMMMMMM++MMN//oh:          
+          `sh+/MMMhyyMMMs- `-`     mMMMMMMMMMNmy+-`   -MMMhMMMsmMMmdMMd/yy+           
+    `-/+++oyy-/MMM+.`/hh/.`mNm:`   mMMd+/////:-.`      NMMMMMd/:NMMMMMy:/yyo/:.`      
+   +os+//:-..-oMMMo:--:::-/MMMo. .-mMMd+---`           hMMMMN+. oMMMMMo. `-+osyso:`   
+   syo     `mNMMMMMNNNNNNNNMMMo.oNNMMMMMNNNN:`         +MMMMs:`  dMMMN/`     ``:syo   
+   /yh`     :syyyyyyyyyyyyyyyy+.`+syyyyyyyyo:`         .oyys:`   .oyys:`        +yh   
+   -yh-        ````````````````    `````````              ``        ``          oys   
+   -+h/------------------------::::::::://////++++++++++++++++++++++///////::::/yd:   
+   shdddddddddddddddddddddddddddddhhhhhhhhyyyyyssssssssssssssssyyyyyyyhhhhhhhddddh`   
+                                                                                      
+  S. Ponce, E. R. Margine, C. Verdi, and F. Giustino,                                 
+                                                Comput. Phys. Commun. 209, 116 (2016) 
+                                                                                      
+
+     Program EPW v.5.3.0 starts on 17Jun2021 at 23:22:19 
+
+     This program is part of the open-source Quantum ESPRESSO suite
+     for quantum simulation of materials; please cite
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 21 395502 (2009);
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 29 465901 (2017);
+          URL http://www.quantum-espresso.org", 
+     in publications or presentations arising from this work. More details at
+     http://www.quantum-espresso.org/quote
+
+     Parallel version (MPI), running on     1 processors
+
+     MPI processes distributed on     1 nodes
+     Fft bands division:     nmany     =       1
+
+     Reading supplied temperature list.
+
+     Reading xml data from directory:
+
+     ./MgB2.save/
+
+     IMPORTANT: XC functional enforced from input :
+     Exchange-correlation= PZ
+                           (   1   1   0   0   0   0   0)
+     Any further DFT definition will be discarded
+     Please, verify this is what you really want
+
+
+     G-vector sticks info
+     --------------------
+     sticks:   dense  smooth     PW     G-vecs:    dense   smooth      PW
+     Sum         379     379    163                 6657     6657    1907
+
+     Reading collected, re-writing distributed wavefunctions
+
+     --                                                                         
+
+     bravais-lattice index     =            4
+     lattice parameter (a_0)   =       5.8260  a.u.
+     unit-cell volume          =     195.5871 (a.u.)^3
+     number of atoms/cell      =            3
+     number of atomic types    =            2
+     kinetic-energy cut-off    =      40.0000  Ry
+     charge density cut-off    =     160.0000  Ry
+     Exchange-correlation= PZ
+                           (   1   1   0   0   0   0   0)
+
+
+     celldm(1)=    5.82603  celldm(2)=    0.00000  celldm(3)=    1.14207
+     celldm(4)=    0.00000  celldm(5)=    0.00000  celldm(6)=    0.00000
+
+     crystal axes: (cart. coord. in units of a_0)
+               a(1) = (  1.0000  0.0000  0.0000 )  
+               a(2) = ( -0.5000  0.8660  0.0000 )  
+               a(3) = (  0.0000  0.0000  1.1421 )  
+
+     reciprocal axes: (cart. coord. in units 2 pi/a_0)
+               b(1) = (  1.0000  0.5774 -0.0000 )  
+               b(2) = (  0.0000  1.1547  0.0000 )  
+               b(3) = (  0.0000 -0.0000  0.8756 )  
+
+
+     Atoms inside the unit cell: 
+
+   Cartesian axes
+
+     site n.  atom      mass           positions (a_0 units)
+        1        Mg  24.3050   tau( 1) = (    0.00000    0.00000    0.00000  )
+        2        B   10.8110   tau( 2) = (   -0.00000    0.57735    0.57103  )
+        3        B   10.8110   tau( 3) = (    0.50000    0.28868    0.57103  )
+
+     25 Sym.Ops. (with q -> -q+G )
+
+
+     G cutoff =  137.5641  (   6657 G-vectors)     FFT grid: ( 24, 24, 27)
+     number of k points=  216  gaussian broad. (Ry)=  0.0200     ngauss =   1
+                       cart. coord. in units 2pi/a_0
+        k(    1) = (   0.0000000   0.0000000   0.0000000), wk =   0.0092593
+        k(    2) = (   0.0000000   0.0000000   0.1459339), wk =   0.0092593
+        k(    3) = (   0.0000000   0.0000000   0.2918678), wk =   0.0092593
+        k(    4) = (   0.0000000   0.0000000   0.4378018), wk =   0.0092593
+        k(    5) = (   0.0000000   0.0000000   0.5837357), wk =   0.0092593
+        k(    6) = (   0.0000000   0.0000000   0.7296696), wk =   0.0092593
+        k(    7) = (   0.0000000   0.1924501   0.0000000), wk =   0.0092593
+        k(    8) = (   0.0000000   0.1924501   0.1459339), wk =   0.0092593
+        k(    9) = (   0.0000000   0.1924501   0.2918678), wk =   0.0092593
+        k(   10) = (   0.0000000   0.1924501   0.4378018), wk =   0.0092593
+        k(   11) = (   0.0000000   0.1924501   0.5837357), wk =   0.0092593
+        k(   12) = (   0.0000000   0.1924501   0.7296696), wk =   0.0092593
+        k(   13) = (   0.0000000   0.3849002   0.0000000), wk =   0.0092593
+        k(   14) = (   0.0000000   0.3849002   0.1459339), wk =   0.0092593
+        k(   15) = (   0.0000000   0.3849002   0.2918678), wk =   0.0092593
+        k(   16) = (   0.0000000   0.3849002   0.4378018), wk =   0.0092593
+        k(   17) = (   0.0000000   0.3849002   0.5837357), wk =   0.0092593
+        k(   18) = (   0.0000000   0.3849002   0.7296696), wk =   0.0092593
+        k(   19) = (   0.0000000   0.5773503   0.0000000), wk =   0.0092593
+        k(   20) = (   0.0000000   0.5773503   0.1459339), wk =   0.0092593
+        k(   21) = (   0.0000000   0.5773503   0.2918678), wk =   0.0092593
+        k(   22) = (   0.0000000   0.5773503   0.4378018), wk =   0.0092593
+        k(   23) = (   0.0000000   0.5773503   0.5837357), wk =   0.0092593
+        k(   24) = (   0.0000000   0.5773503   0.7296696), wk =   0.0092593
+        k(   25) = (   0.0000000   0.7698004   0.0000000), wk =   0.0092593
+        k(   26) = (   0.0000000   0.7698004   0.1459339), wk =   0.0092593
+        k(   27) = (   0.0000000   0.7698004   0.2918678), wk =   0.0092593
+        k(   28) = (   0.0000000   0.7698004   0.4378018), wk =   0.0092593
+        k(   29) = (   0.0000000   0.7698004   0.5837357), wk =   0.0092593
+        k(   30) = (   0.0000000   0.7698004   0.7296696), wk =   0.0092593
+        k(   31) = (   0.0000000   0.9622504   0.0000000), wk =   0.0092593
+        k(   32) = (   0.0000000   0.9622504   0.1459339), wk =   0.0092593
+        k(   33) = (   0.0000000   0.9622504   0.2918678), wk =   0.0092593
+        k(   34) = (   0.0000000   0.9622504   0.4378018), wk =   0.0092593
+        k(   35) = (   0.0000000   0.9622504   0.5837357), wk =   0.0092593
+        k(   36) = (   0.0000000   0.9622504   0.7296696), wk =   0.0092593
+        k(   37) = (   0.1666667   0.0962250   0.0000000), wk =   0.0092593
+        k(   38) = (   0.1666667   0.0962250   0.1459339), wk =   0.0092593
+        k(   39) = (   0.1666667   0.0962250   0.2918678), wk =   0.0092593
+        k(   40) = (   0.1666667   0.0962250   0.4378018), wk =   0.0092593
+        k(   41) = (   0.1666667   0.0962250   0.5837357), wk =   0.0092593
+        k(   42) = (   0.1666667   0.0962250   0.7296696), wk =   0.0092593
+        k(   43) = (   0.1666667   0.2886751   0.0000000), wk =   0.0092593
+        k(   44) = (   0.1666667   0.2886751   0.1459339), wk =   0.0092593
+        k(   45) = (   0.1666667   0.2886751   0.2918678), wk =   0.0092593
+        k(   46) = (   0.1666667   0.2886751   0.4378018), wk =   0.0092593
+        k(   47) = (   0.1666667   0.2886751   0.5837357), wk =   0.0092593
+        k(   48) = (   0.1666667   0.2886751   0.7296696), wk =   0.0092593
+        k(   49) = (   0.1666667   0.4811252   0.0000000), wk =   0.0092593
+        k(   50) = (   0.1666667   0.4811252   0.1459339), wk =   0.0092593
+        k(   51) = (   0.1666667   0.4811252   0.2918678), wk =   0.0092593
+        k(   52) = (   0.1666667   0.4811252   0.4378018), wk =   0.0092593
+        k(   53) = (   0.1666667   0.4811252   0.5837357), wk =   0.0092593
+        k(   54) = (   0.1666667   0.4811252   0.7296696), wk =   0.0092593
+        k(   55) = (   0.1666667   0.6735753   0.0000000), wk =   0.0092593
+        k(   56) = (   0.1666667   0.6735753   0.1459339), wk =   0.0092593
+        k(   57) = (   0.1666667   0.6735753   0.2918678), wk =   0.0092593
+        k(   58) = (   0.1666667   0.6735753   0.4378018), wk =   0.0092593
+        k(   59) = (   0.1666667   0.6735753   0.5837357), wk =   0.0092593
+        k(   60) = (   0.1666667   0.6735753   0.7296696), wk =   0.0092593
+        k(   61) = (   0.1666667   0.8660254   0.0000000), wk =   0.0092593
+        k(   62) = (   0.1666667   0.8660254   0.1459339), wk =   0.0092593
+        k(   63) = (   0.1666667   0.8660254   0.2918678), wk =   0.0092593
+        k(   64) = (   0.1666667   0.8660254   0.4378018), wk =   0.0092593
+        k(   65) = (   0.1666667   0.8660254   0.5837357), wk =   0.0092593
+        k(   66) = (   0.1666667   0.8660254   0.7296696), wk =   0.0092593
+        k(   67) = (   0.1666667   1.0584755   0.0000000), wk =   0.0092593
+        k(   68) = (   0.1666667   1.0584755   0.1459339), wk =   0.0092593
+        k(   69) = (   0.1666667   1.0584755   0.2918678), wk =   0.0092593
+        k(   70) = (   0.1666667   1.0584755   0.4378018), wk =   0.0092593
+        k(   71) = (   0.1666667   1.0584755   0.5837357), wk =   0.0092593
+        k(   72) = (   0.1666667   1.0584755   0.7296696), wk =   0.0092593
+        k(   73) = (   0.3333333   0.1924501   0.0000000), wk =   0.0092593
+        k(   74) = (   0.3333333   0.1924501   0.1459339), wk =   0.0092593
+        k(   75) = (   0.3333333   0.1924501   0.2918678), wk =   0.0092593
+        k(   76) = (   0.3333333   0.1924501   0.4378018), wk =   0.0092593
+        k(   77) = (   0.3333333   0.1924501   0.5837357), wk =   0.0092593
+        k(   78) = (   0.3333333   0.1924501   0.7296696), wk =   0.0092593
+        k(   79) = (   0.3333333   0.3849002   0.0000000), wk =   0.0092593
+        k(   80) = (   0.3333333   0.3849002   0.1459339), wk =   0.0092593
+        k(   81) = (   0.3333333   0.3849002   0.2918678), wk =   0.0092593
+        k(   82) = (   0.3333333   0.3849002   0.4378018), wk =   0.0092593
+        k(   83) = (   0.3333333   0.3849002   0.5837357), wk =   0.0092593
+        k(   84) = (   0.3333333   0.3849002   0.7296696), wk =   0.0092593
+        k(   85) = (   0.3333333   0.5773503   0.0000000), wk =   0.0092593
+        k(   86) = (   0.3333333   0.5773503   0.1459339), wk =   0.0092593
+        k(   87) = (   0.3333333   0.5773503   0.2918678), wk =   0.0092593
+        k(   88) = (   0.3333333   0.5773503   0.4378018), wk =   0.0092593
+        k(   89) = (   0.3333333   0.5773503   0.5837357), wk =   0.0092593
+        k(   90) = (   0.3333333   0.5773503   0.7296696), wk =   0.0092593
+        k(   91) = (   0.3333333   0.7698004   0.0000000), wk =   0.0092593
+        k(   92) = (   0.3333333   0.7698004   0.1459339), wk =   0.0092593
+        k(   93) = (   0.3333333   0.7698004   0.2918678), wk =   0.0092593
+        k(   94) = (   0.3333333   0.7698004   0.4378018), wk =   0.0092593
+        k(   95) = (   0.3333333   0.7698004   0.5837357), wk =   0.0092593
+        k(   96) = (   0.3333333   0.7698004   0.7296696), wk =   0.0092593
+        k(   97) = (   0.3333333   0.9622505   0.0000000), wk =   0.0092593
+        k(   98) = (   0.3333333   0.9622505   0.1459339), wk =   0.0092593
+        k(   99) = (   0.3333333   0.9622505   0.2918678), wk =   0.0092593
+        k(  100) = (   0.3333333   0.9622505   0.4378018), wk =   0.0092593
+        k(  101) = (   0.3333333   0.9622505   0.5837357), wk =   0.0092593
+        k(  102) = (   0.3333333   0.9622505   0.7296696), wk =   0.0092593
+        k(  103) = (   0.3333333   1.1547005   0.0000000), wk =   0.0092593
+        k(  104) = (   0.3333333   1.1547005   0.1459339), wk =   0.0092593
+        k(  105) = (   0.3333333   1.1547005   0.2918678), wk =   0.0092593
+        k(  106) = (   0.3333333   1.1547005   0.4378018), wk =   0.0092593
+        k(  107) = (   0.3333333   1.1547005   0.5837357), wk =   0.0092593
+        k(  108) = (   0.3333333   1.1547005   0.7296696), wk =   0.0092593
+        k(  109) = (   0.5000000   0.2886751   0.0000000), wk =   0.0092593
+        k(  110) = (   0.5000000   0.2886751   0.1459339), wk =   0.0092593
+        k(  111) = (   0.5000000   0.2886751   0.2918678), wk =   0.0092593
+        k(  112) = (   0.5000000   0.2886751   0.4378018), wk =   0.0092593
+        k(  113) = (   0.5000000   0.2886751   0.5837357), wk =   0.0092593
+        k(  114) = (   0.5000000   0.2886751   0.7296696), wk =   0.0092593
+        k(  115) = (   0.5000000   0.4811252   0.0000000), wk =   0.0092593
+        k(  116) = (   0.5000000   0.4811252   0.1459339), wk =   0.0092593
+        k(  117) = (   0.5000000   0.4811252   0.2918678), wk =   0.0092593
+        k(  118) = (   0.5000000   0.4811252   0.4378018), wk =   0.0092593
+        k(  119) = (   0.5000000   0.4811252   0.5837357), wk =   0.0092593
+        k(  120) = (   0.5000000   0.4811252   0.7296696), wk =   0.0092593
+        k(  121) = (   0.5000000   0.6735753   0.0000000), wk =   0.0092593
+        k(  122) = (   0.5000000   0.6735753   0.1459339), wk =   0.0092593
+        k(  123) = (   0.5000000   0.6735753   0.2918678), wk =   0.0092593
+        k(  124) = (   0.5000000   0.6735753   0.4378018), wk =   0.0092593
+        k(  125) = (   0.5000000   0.6735753   0.5837357), wk =   0.0092593
+        k(  126) = (   0.5000000   0.6735753   0.7296696), wk =   0.0092593
+        k(  127) = (   0.5000000   0.8660254   0.0000000), wk =   0.0092593
+        k(  128) = (   0.5000000   0.8660254   0.1459339), wk =   0.0092593
+        k(  129) = (   0.5000000   0.8660254   0.2918678), wk =   0.0092593
+        k(  130) = (   0.5000000   0.8660254   0.4378018), wk =   0.0092593
+        k(  131) = (   0.5000000   0.8660254   0.5837357), wk =   0.0092593
+        k(  132) = (   0.5000000   0.8660254   0.7296696), wk =   0.0092593
+        k(  133) = (   0.5000000   1.0584755   0.0000000), wk =   0.0092593
+        k(  134) = (   0.5000000   1.0584755   0.1459339), wk =   0.0092593
+        k(  135) = (   0.5000000   1.0584755   0.2918678), wk =   0.0092593
+        k(  136) = (   0.5000000   1.0584755   0.4378018), wk =   0.0092593
+        k(  137) = (   0.5000000   1.0584755   0.5837357), wk =   0.0092593
+        k(  138) = (   0.5000000   1.0584755   0.7296696), wk =   0.0092593
+        k(  139) = (   0.5000000   1.2509256   0.0000000), wk =   0.0092593
+        k(  140) = (   0.5000000   1.2509256   0.1459339), wk =   0.0092593
+        k(  141) = (   0.5000000   1.2509256   0.2918678), wk =   0.0092593
+        k(  142) = (   0.5000000   1.2509256   0.4378018), wk =   0.0092593
+        k(  143) = (   0.5000000   1.2509256   0.5837357), wk =   0.0092593
+        k(  144) = (   0.5000000   1.2509256   0.7296696), wk =   0.0092593
+        k(  145) = (   0.6666667   0.3849002   0.0000000), wk =   0.0092593
+        k(  146) = (   0.6666667   0.3849002   0.1459339), wk =   0.0092593
+        k(  147) = (   0.6666667   0.3849002   0.2918678), wk =   0.0092593
+        k(  148) = (   0.6666667   0.3849002   0.4378018), wk =   0.0092593
+        k(  149) = (   0.6666667   0.3849002   0.5837357), wk =   0.0092593
+        k(  150) = (   0.6666667   0.3849002   0.7296696), wk =   0.0092593
+        k(  151) = (   0.6666667   0.5773503   0.0000000), wk =   0.0092593
+        k(  152) = (   0.6666667   0.5773503   0.1459339), wk =   0.0092593
+        k(  153) = (   0.6666667   0.5773503   0.2918678), wk =   0.0092593
+        k(  154) = (   0.6666667   0.5773503   0.4378018), wk =   0.0092593
+        k(  155) = (   0.6666667   0.5773503   0.5837357), wk =   0.0092593
+        k(  156) = (   0.6666667   0.5773503   0.7296696), wk =   0.0092593
+        k(  157) = (   0.6666667   0.7698004   0.0000000), wk =   0.0092593
+        k(  158) = (   0.6666667   0.7698004   0.1459339), wk =   0.0092593
+        k(  159) = (   0.6666667   0.7698004   0.2918678), wk =   0.0092593
+        k(  160) = (   0.6666667   0.7698004   0.4378018), wk =   0.0092593
+        k(  161) = (   0.6666667   0.7698004   0.5837357), wk =   0.0092593
+        k(  162) = (   0.6666667   0.7698004   0.7296696), wk =   0.0092593
+        k(  163) = (   0.6666667   0.9622505   0.0000000), wk =   0.0092593
+        k(  164) = (   0.6666667   0.9622505   0.1459339), wk =   0.0092593
+        k(  165) = (   0.6666667   0.9622505   0.2918678), wk =   0.0092593
+        k(  166) = (   0.6666667   0.9622505   0.4378018), wk =   0.0092593
+        k(  167) = (   0.6666667   0.9622505   0.5837357), wk =   0.0092593
+        k(  168) = (   0.6666667   0.9622505   0.7296696), wk =   0.0092593
+        k(  169) = (   0.6666667   1.1547005   0.0000000), wk =   0.0092593
+        k(  170) = (   0.6666667   1.1547005   0.1459339), wk =   0.0092593
+        k(  171) = (   0.6666667   1.1547005   0.2918678), wk =   0.0092593
+        k(  172) = (   0.6666667   1.1547005   0.4378018), wk =   0.0092593
+        k(  173) = (   0.6666667   1.1547005   0.5837357), wk =   0.0092593
+        k(  174) = (   0.6666667   1.1547005   0.7296696), wk =   0.0092593
+        k(  175) = (   0.6666667   1.3471506   0.0000000), wk =   0.0092593
+        k(  176) = (   0.6666667   1.3471506   0.1459339), wk =   0.0092593
+        k(  177) = (   0.6666667   1.3471506   0.2918678), wk =   0.0092593
+        k(  178) = (   0.6666667   1.3471506   0.4378018), wk =   0.0092593
+        k(  179) = (   0.6666667   1.3471506   0.5837357), wk =   0.0092593
+        k(  180) = (   0.6666667   1.3471506   0.7296696), wk =   0.0092593
+        k(  181) = (   0.8333333   0.4811252   0.0000000), wk =   0.0092593
+        k(  182) = (   0.8333333   0.4811252   0.1459339), wk =   0.0092593
+        k(  183) = (   0.8333333   0.4811252   0.2918678), wk =   0.0092593
+        k(  184) = (   0.8333333   0.4811252   0.4378018), wk =   0.0092593
+        k(  185) = (   0.8333333   0.4811252   0.5837357), wk =   0.0092593
+        k(  186) = (   0.8333333   0.4811252   0.7296696), wk =   0.0092593
+        k(  187) = (   0.8333333   0.6735753   0.0000000), wk =   0.0092593
+        k(  188) = (   0.8333333   0.6735753   0.1459339), wk =   0.0092593
+        k(  189) = (   0.8333333   0.6735753   0.2918678), wk =   0.0092593
+        k(  190) = (   0.8333333   0.6735753   0.4378018), wk =   0.0092593
+        k(  191) = (   0.8333333   0.6735753   0.5837357), wk =   0.0092593
+        k(  192) = (   0.8333333   0.6735753   0.7296696), wk =   0.0092593
+        k(  193) = (   0.8333333   0.8660254   0.0000000), wk =   0.0092593
+        k(  194) = (   0.8333333   0.8660254   0.1459339), wk =   0.0092593
+        k(  195) = (   0.8333333   0.8660254   0.2918678), wk =   0.0092593
+        k(  196) = (   0.8333333   0.8660254   0.4378018), wk =   0.0092593
+        k(  197) = (   0.8333333   0.8660254   0.5837357), wk =   0.0092593
+        k(  198) = (   0.8333333   0.8660254   0.7296696), wk =   0.0092593
+        k(  199) = (   0.8333333   1.0584755   0.0000000), wk =   0.0092593
+        k(  200) = (   0.8333333   1.0584755   0.1459339), wk =   0.0092593
+        k(  201) = (   0.8333333   1.0584755   0.2918678), wk =   0.0092593
+        k(  202) = (   0.8333333   1.0584755   0.4378018), wk =   0.0092593
+        k(  203) = (   0.8333333   1.0584755   0.5837357), wk =   0.0092593
+        k(  204) = (   0.8333333   1.0584755   0.7296696), wk =   0.0092593
+        k(  205) = (   0.8333333   1.2509256   0.0000000), wk =   0.0092593
+        k(  206) = (   0.8333333   1.2509256   0.1459339), wk =   0.0092593
+        k(  207) = (   0.8333333   1.2509256   0.2918678), wk =   0.0092593
+        k(  208) = (   0.8333333   1.2509256   0.4378018), wk =   0.0092593
+        k(  209) = (   0.8333333   1.2509256   0.5837357), wk =   0.0092593
+        k(  210) = (   0.8333333   1.2509256   0.7296696), wk =   0.0092593
+        k(  211) = (   0.8333333   1.4433757   0.0000000), wk =   0.0092593
+        k(  212) = (   0.8333333   1.4433757   0.1459339), wk =   0.0092593
+        k(  213) = (   0.8333333   1.4433757   0.2918678), wk =   0.0092593
+        k(  214) = (   0.8333333   1.4433757   0.4378018), wk =   0.0092593
+        k(  215) = (   0.8333333   1.4433757   0.5837357), wk =   0.0092593
+        k(  216) = (   0.8333333   1.4433757   0.7296696), wk =   0.0092593
+
+     PseudoPot. # 1 for Mg read from file:
+     ../pp/Mg.pz-n-vbc.UPF
+     MD5 check sum: 51ac066f8f4bf7da60c51ce0af5caf3d
+     Pseudo is Norm-conserving + core correction, Zval =  2.0
+     Generated by new atomic code, or converted to UPF format
+     Using radial grid of  171 points,  2 beta functions with: 
+                l(1) =   0
+                l(2) =   1
+
+     PseudoPot. # 2 for B  read from file:
+     ../pp/B.pz-vbc.UPF
+     MD5 check sum: b59596b5d63edeea6a2b3a0beace49c5
+     Pseudo is Norm-conserving, Zval =  3.0
+     Generated by new atomic code, or converted to UPF format
+     Using radial grid of  157 points,  1 beta functions with: 
+                l(1) =   0
+     EPW          :      0.24s CPU      0.28s WALL
+
+     EPW          :      0.26s CPU      0.31s WALL
+
+     -------------------------------------------------------------------
+     Wannierization on  6 x  6 x  6 electronic grid
+     -------------------------------------------------------------------
+
+     Spin CASE ( default = unpolarized )
+
+     Initializing Wannier90
+
+
+     Initial Wannier projections
+
+     (   0.33333   0.66667   0.50000) :  l =   1 mr =   1
+     (   0.66667   0.33333   0.50000) :  l =   1 mr =   1
+     (   0.50000   1.00000   0.50000) :  l =   0 mr =   1
+     (   0.00000   0.50000   0.50000) :  l =   0 mr =   1
+     (   0.50000   0.50000   0.50000) :  l =   0 mr =   1
+
+      - Number of bands is (  8)
+      - Number of total bands is (  8)
+      - Number of excluded bands is (  0)
+      - Number of wannier functions is (  5)
+      - All guiding functions are given 
+
+  Reading data about k-point neighbours 
+
+      - All neighbours are found 
+
+     AMN
+      k points =   216 in    1 pools
+            1 of  216 on ionode
+            2 of  216 on ionode
+            3 of  216 on ionode
+            4 of  216 on ionode
+            5 of  216 on ionode
+            6 of  216 on ionode
+            7 of  216 on ionode
+            8 of  216 on ionode
+            9 of  216 on ionode
+           10 of  216 on ionode
+           11 of  216 on ionode
+           12 of  216 on ionode
+           13 of  216 on ionode
+           14 of  216 on ionode
+           15 of  216 on ionode
+           16 of  216 on ionode
+           17 of  216 on ionode
+           18 of  216 on ionode
+           19 of  216 on ionode
+           20 of  216 on ionode
+           21 of  216 on ionode
+           22 of  216 on ionode
+           23 of  216 on ionode
+           24 of  216 on ionode
+           25 of  216 on ionode
+           26 of  216 on ionode
+           27 of  216 on ionode
+           28 of  216 on ionode
+           29 of  216 on ionode
+           30 of  216 on ionode
+           31 of  216 on ionode
+           32 of  216 on ionode
+           33 of  216 on ionode
+           34 of  216 on ionode
+           35 of  216 on ionode
+           36 of  216 on ionode
+           37 of  216 on ionode
+           38 of  216 on ionode
+           39 of  216 on ionode
+           40 of  216 on ionode
+           41 of  216 on ionode
+           42 of  216 on ionode
+           43 of  216 on ionode
+           44 of  216 on ionode
+           45 of  216 on ionode
+           46 of  216 on ionode
+           47 of  216 on ionode
+           48 of  216 on ionode
+           49 of  216 on ionode
+           50 of  216 on ionode
+           51 of  216 on ionode
+           52 of  216 on ionode
+           53 of  216 on ionode
+           54 of  216 on ionode
+           55 of  216 on ionode
+           56 of  216 on ionode
+           57 of  216 on ionode
+           58 of  216 on ionode
+           59 of  216 on ionode
+           60 of  216 on ionode
+           61 of  216 on ionode
+           62 of  216 on ionode
+           63 of  216 on ionode
+           64 of  216 on ionode
+           65 of  216 on ionode
+           66 of  216 on ionode
+           67 of  216 on ionode
+           68 of  216 on ionode
+           69 of  216 on ionode
+           70 of  216 on ionode
+           71 of  216 on ionode
+           72 of  216 on ionode
+           73 of  216 on ionode
+           74 of  216 on ionode
+           75 of  216 on ionode
+           76 of  216 on ionode
+           77 of  216 on ionode
+           78 of  216 on ionode
+           79 of  216 on ionode
+           80 of  216 on ionode
+           81 of  216 on ionode
+           82 of  216 on ionode
+           83 of  216 on ionode
+           84 of  216 on ionode
+           85 of  216 on ionode
+           86 of  216 on ionode
+           87 of  216 on ionode
+           88 of  216 on ionode
+           89 of  216 on ionode
+           90 of  216 on ionode
+           91 of  216 on ionode
+           92 of  216 on ionode
+           93 of  216 on ionode
+           94 of  216 on ionode
+           95 of  216 on ionode
+           96 of  216 on ionode
+           97 of  216 on ionode
+           98 of  216 on ionode
+           99 of  216 on ionode
+          100 of  216 on ionode
+          101 of  216 on ionode
+          102 of  216 on ionode
+          103 of  216 on ionode
+          104 of  216 on ionode
+          105 of  216 on ionode
+          106 of  216 on ionode
+          107 of  216 on ionode
+          108 of  216 on ionode
+          109 of  216 on ionode
+          110 of  216 on ionode
+          111 of  216 on ionode
+          112 of  216 on ionode
+          113 of  216 on ionode
+          114 of  216 on ionode
+          115 of  216 on ionode
+          116 of  216 on ionode
+          117 of  216 on ionode
+          118 of  216 on ionode
+          119 of  216 on ionode
+          120 of  216 on ionode
+          121 of  216 on ionode
+          122 of  216 on ionode
+          123 of  216 on ionode
+          124 of  216 on ionode
+          125 of  216 on ionode
+          126 of  216 on ionode
+          127 of  216 on ionode
+          128 of  216 on ionode
+          129 of  216 on ionode
+          130 of  216 on ionode
+          131 of  216 on ionode
+          132 of  216 on ionode
+          133 of  216 on ionode
+          134 of  216 on ionode
+          135 of  216 on ionode
+          136 of  216 on ionode
+          137 of  216 on ionode
+          138 of  216 on ionode
+          139 of  216 on ionode
+          140 of  216 on ionode
+          141 of  216 on ionode
+          142 of  216 on ionode
+          143 of  216 on ionode
+          144 of  216 on ionode
+          145 of  216 on ionode
+          146 of  216 on ionode
+          147 of  216 on ionode
+          148 of  216 on ionode
+          149 of  216 on ionode
+          150 of  216 on ionode
+          151 of  216 on ionode
+          152 of  216 on ionode
+          153 of  216 on ionode
+          154 of  216 on ionode
+          155 of  216 on ionode
+          156 of  216 on ionode
+          157 of  216 on ionode
+          158 of  216 on ionode
+          159 of  216 on ionode
+          160 of  216 on ionode
+          161 of  216 on ionode
+          162 of  216 on ionode
+          163 of  216 on ionode
+          164 of  216 on ionode
+          165 of  216 on ionode
+          166 of  216 on ionode
+          167 of  216 on ionode
+          168 of  216 on ionode
+          169 of  216 on ionode
+          170 of  216 on ionode
+          171 of  216 on ionode
+          172 of  216 on ionode
+          173 of  216 on ionode
+          174 of  216 on ionode
+          175 of  216 on ionode
+          176 of  216 on ionode
+          177 of  216 on ionode
+          178 of  216 on ionode
+          179 of  216 on ionode
+          180 of  216 on ionode
+          181 of  216 on ionode
+          182 of  216 on ionode
+          183 of  216 on ionode
+          184 of  216 on ionode
+          185 of  216 on ionode
+          186 of  216 on ionode
+          187 of  216 on ionode
+          188 of  216 on ionode
+          189 of  216 on ionode
+          190 of  216 on ionode
+          191 of  216 on ionode
+          192 of  216 on ionode
+          193 of  216 on ionode
+          194 of  216 on ionode
+          195 of  216 on ionode
+          196 of  216 on ionode
+          197 of  216 on ionode
+          198 of  216 on ionode
+          199 of  216 on ionode
+          200 of  216 on ionode
+          201 of  216 on ionode
+          202 of  216 on ionode
+          203 of  216 on ionode
+          204 of  216 on ionode
+          205 of  216 on ionode
+          206 of  216 on ionode
+          207 of  216 on ionode
+          208 of  216 on ionode
+          209 of  216 on ionode
+          210 of  216 on ionode
+          211 of  216 on ionode
+          212 of  216 on ionode
+          213 of  216 on ionode
+          214 of  216 on ionode
+          215 of  216 on ionode
+          216 of  216 on ionode
+
+     AMN calculated
+
+     MMN
+      k points =   216 in    1 pools
+            1 of  216 on ionode
+            2 of  216 on ionode
+            3 of  216 on ionode
+            4 of  216 on ionode
+            5 of  216 on ionode
+            6 of  216 on ionode
+            7 of  216 on ionode
+            8 of  216 on ionode
+            9 of  216 on ionode
+           10 of  216 on ionode
+           11 of  216 on ionode
+           12 of  216 on ionode
+           13 of  216 on ionode
+           14 of  216 on ionode
+           15 of  216 on ionode
+           16 of  216 on ionode
+           17 of  216 on ionode
+           18 of  216 on ionode
+           19 of  216 on ionode
+           20 of  216 on ionode
+           21 of  216 on ionode
+           22 of  216 on ionode
+           23 of  216 on ionode
+           24 of  216 on ionode
+           25 of  216 on ionode
+           26 of  216 on ionode
+           27 of  216 on ionode
+           28 of  216 on ionode
+           29 of  216 on ionode
+           30 of  216 on ionode
+           31 of  216 on ionode
+           32 of  216 on ionode
+           33 of  216 on ionode
+           34 of  216 on ionode
+           35 of  216 on ionode
+           36 of  216 on ionode
+           37 of  216 on ionode
+           38 of  216 on ionode
+           39 of  216 on ionode
+           40 of  216 on ionode
+           41 of  216 on ionode
+           42 of  216 on ionode
+           43 of  216 on ionode
+           44 of  216 on ionode
+           45 of  216 on ionode
+           46 of  216 on ionode
+           47 of  216 on ionode
+           48 of  216 on ionode
+           49 of  216 on ionode
+           50 of  216 on ionode
+           51 of  216 on ionode
+           52 of  216 on ionode
+           53 of  216 on ionode
+           54 of  216 on ionode
+           55 of  216 on ionode
+           56 of  216 on ionode
+           57 of  216 on ionode
+           58 of  216 on ionode
+           59 of  216 on ionode
+           60 of  216 on ionode
+           61 of  216 on ionode
+           62 of  216 on ionode
+           63 of  216 on ionode
+           64 of  216 on ionode
+           65 of  216 on ionode
+           66 of  216 on ionode
+           67 of  216 on ionode
+           68 of  216 on ionode
+           69 of  216 on ionode
+           70 of  216 on ionode
+           71 of  216 on ionode
+           72 of  216 on ionode
+           73 of  216 on ionode
+           74 of  216 on ionode
+           75 of  216 on ionode
+           76 of  216 on ionode
+           77 of  216 on ionode
+           78 of  216 on ionode
+           79 of  216 on ionode
+           80 of  216 on ionode
+           81 of  216 on ionode
+           82 of  216 on ionode
+           83 of  216 on ionode
+           84 of  216 on ionode
+           85 of  216 on ionode
+           86 of  216 on ionode
+           87 of  216 on ionode
+           88 of  216 on ionode
+           89 of  216 on ionode
+           90 of  216 on ionode
+           91 of  216 on ionode
+           92 of  216 on ionode
+           93 of  216 on ionode
+           94 of  216 on ionode
+           95 of  216 on ionode
+           96 of  216 on ionode
+           97 of  216 on ionode
+           98 of  216 on ionode
+           99 of  216 on ionode
+          100 of  216 on ionode
+          101 of  216 on ionode
+          102 of  216 on ionode
+          103 of  216 on ionode
+          104 of  216 on ionode
+          105 of  216 on ionode
+          106 of  216 on ionode
+          107 of  216 on ionode
+          108 of  216 on ionode
+          109 of  216 on ionode
+          110 of  216 on ionode
+          111 of  216 on ionode
+          112 of  216 on ionode
+          113 of  216 on ionode
+          114 of  216 on ionode
+          115 of  216 on ionode
+          116 of  216 on ionode
+          117 of  216 on ionode
+          118 of  216 on ionode
+          119 of  216 on ionode
+          120 of  216 on ionode
+          121 of  216 on ionode
+          122 of  216 on ionode
+          123 of  216 on ionode
+          124 of  216 on ionode
+          125 of  216 on ionode
+          126 of  216 on ionode
+          127 of  216 on ionode
+          128 of  216 on ionode
+          129 of  216 on ionode
+          130 of  216 on ionode
+          131 of  216 on ionode
+          132 of  216 on ionode
+          133 of  216 on ionode
+          134 of  216 on ionode
+          135 of  216 on ionode
+          136 of  216 on ionode
+          137 of  216 on ionode
+          138 of  216 on ionode
+          139 of  216 on ionode
+          140 of  216 on ionode
+          141 of  216 on ionode
+          142 of  216 on ionode
+          143 of  216 on ionode
+          144 of  216 on ionode
+          145 of  216 on ionode
+          146 of  216 on ionode
+          147 of  216 on ionode
+          148 of  216 on ionode
+          149 of  216 on ionode
+          150 of  216 on ionode
+          151 of  216 on ionode
+          152 of  216 on ionode
+          153 of  216 on ionode
+          154 of  216 on ionode
+          155 of  216 on ionode
+          156 of  216 on ionode
+          157 of  216 on ionode
+          158 of  216 on ionode
+          159 of  216 on ionode
+          160 of  216 on ionode
+          161 of  216 on ionode
+          162 of  216 on ionode
+          163 of  216 on ionode
+          164 of  216 on ionode
+          165 of  216 on ionode
+          166 of  216 on ionode
+          167 of  216 on ionode
+          168 of  216 on ionode
+          169 of  216 on ionode
+          170 of  216 on ionode
+          171 of  216 on ionode
+          172 of  216 on ionode
+          173 of  216 on ionode
+          174 of  216 on ionode
+          175 of  216 on ionode
+          176 of  216 on ionode
+          177 of  216 on ionode
+          178 of  216 on ionode
+          179 of  216 on ionode
+          180 of  216 on ionode
+          181 of  216 on ionode
+          182 of  216 on ionode
+          183 of  216 on ionode
+          184 of  216 on ionode
+          185 of  216 on ionode
+          186 of  216 on ionode
+          187 of  216 on ionode
+          188 of  216 on ionode
+          189 of  216 on ionode
+          190 of  216 on ionode
+          191 of  216 on ionode
+          192 of  216 on ionode
+          193 of  216 on ionode
+          194 of  216 on ionode
+          195 of  216 on ionode
+          196 of  216 on ionode
+          197 of  216 on ionode
+          198 of  216 on ionode
+          199 of  216 on ionode
+          200 of  216 on ionode
+          201 of  216 on ionode
+          202 of  216 on ionode
+          203 of  216 on ionode
+          204 of  216 on ionode
+          205 of  216 on ionode
+          206 of  216 on ionode
+          207 of  216 on ionode
+          208 of  216 on ionode
+          209 of  216 on ionode
+          210 of  216 on ionode
+          211 of  216 on ionode
+          212 of  216 on ionode
+          213 of  216 on ionode
+          214 of  216 on ionode
+          215 of  216 on ionode
+          216 of  216 on ionode
+     MMN calculated
+
+     Running Wannier90
+
+     Wannier Function centers (cartesian, alat) and spreads (ang):
+
+     (  -0.00000   0.57735   0.69532) :   2.34403
+     (   0.50000   0.28868   0.69532) :   2.34403
+     (   0.00000   0.86603   0.49687) :   1.24172
+     (  -0.25000   0.43301   0.49687) :   1.24172
+     (   0.25000   0.43301   0.49687) :   1.24172
+
+     -------------------------------------------------------------------
+     WANNIER      :     36.44s CPU     36.61s WALL (       1 calls)
+     -------------------------------------------------------------------
+
+     Calculating kgmap
+
+     Progress kgmap: ########################################
+     kmaps        :      0.03s CPU      0.03s WALL (       1 calls)
+     Symmetries of Bravais lattice:  24
+     Symmetries of crystal:          24
+
+
+     ===================================================================
+     irreducible q point #    1
+     ===================================================================
+
+     Symmetries of small group of q: 24
+          in addition sym. q -> -q+G:
+
+     Number of q in the star =    1
+     List of q in the star:
+          1   0.000000000   0.000000000   0.000000000
+     Imposing acoustic sum rule on the dynamical matrix
+
+        q(    1 ) = (   0.0000000   0.0000000   0.0000000 )
+
+
+     ===================================================================
+     irreducible q point #    2
+     ===================================================================
+
+     Symmetries of small group of q: 12
+
+     Number of q in the star =    2
+     List of q in the star:
+          1   0.000000000   0.000000000   0.145933920
+          2   0.000000000   0.000000000  -0.145933920
+
+        q(    2 ) = (   0.0000000   0.0000000   0.1459339 )
+        q(    3 ) = (   0.0000000   0.0000000  -0.1459339 )
+
+
+     ===================================================================
+     irreducible q point #    3
+     ===================================================================
+
+     Symmetries of small group of q: 12
+
+     Number of q in the star =    2
+     List of q in the star:
+          1   0.000000000   0.000000000   0.291867841
+          2   0.000000000   0.000000000  -0.291867841
+
+        q(    4 ) = (   0.0000000   0.0000000   0.2918678 )
+        q(    5 ) = (   0.0000000   0.0000000  -0.2918678 )
+
+
+     ===================================================================
+     irreducible q point #    4
+     ===================================================================
+
+     Symmetries of small group of q: 24
+          in addition sym. q -> -q+G:
+
+     Number of q in the star =    1
+     List of q in the star:
+          1   0.000000000   0.000000000  -0.437801761
+
+        q(    6 ) = (   0.0000000   0.0000000  -0.4378018 )
+
+
+     ===================================================================
+     irreducible q point #    5
+     ===================================================================
+
+     Symmetries of small group of q:  4
+
+     Number of q in the star =    6
+     List of q in the star:
+          1   0.000000000   0.192450090   0.000000000
+          2  -0.166666667  -0.096225045   0.000000000
+          3   0.166666667  -0.096225045   0.000000000
+          4   0.166666667   0.096225045   0.000000000
+          5  -0.166666667   0.096225045   0.000000000
+          6   0.000000000  -0.192450090   0.000000000
+
+        q(    7 ) = (   0.0000000   0.1924501   0.0000000 )
+        q(    8 ) = (  -0.1666667  -0.0962250   0.0000000 )
+        q(    9 ) = (   0.1666667  -0.0962250   0.0000000 )
+        q(   10 ) = (   0.1666667   0.0962250   0.0000000 )
+        q(   11 ) = (  -0.1666667   0.0962250   0.0000000 )
+        q(   12 ) = (   0.0000000  -0.1924501   0.0000000 )
+
+
+     ===================================================================
+     irreducible q point #    6
+     ===================================================================
+
+     Symmetries of small group of q:  2
+
+     Number of q in the star =   12
+     List of q in the star:
+          1   0.000000000   0.192450090   0.145933920
+          2   0.000000000   0.192450090  -0.145933920
+          3  -0.166666667  -0.096225045   0.145933920
+          4   0.166666667  -0.096225045   0.145933920
+          5   0.166666667   0.096225045   0.145933920
+          6  -0.166666667   0.096225045   0.145933920
+          7   0.000000000  -0.192450090   0.145933920
+          8   0.166666667   0.096225045  -0.145933920
+          9   0.000000000  -0.192450090  -0.145933920
+         10   0.166666667  -0.096225045  -0.145933920
+         11  -0.166666667   0.096225045  -0.145933920
+         12  -0.166666667  -0.096225045  -0.145933920
+
+        q(   13 ) = (   0.0000000   0.1924501   0.1459339 )
+        q(   14 ) = (   0.0000000   0.1924501  -0.1459339 )
+        q(   15 ) = (  -0.1666667  -0.0962250   0.1459339 )
+        q(   16 ) = (   0.1666667  -0.0962250   0.1459339 )
+        q(   17 ) = (   0.1666667   0.0962250   0.1459339 )
+        q(   18 ) = (  -0.1666667   0.0962250   0.1459339 )
+        q(   19 ) = (   0.0000000  -0.1924501   0.1459339 )
+        q(   20 ) = (   0.1666667   0.0962250  -0.1459339 )
+        q(   21 ) = (   0.0000000  -0.1924501  -0.1459339 )
+        q(   22 ) = (   0.1666667  -0.0962250  -0.1459339 )
+        q(   23 ) = (  -0.1666667   0.0962250  -0.1459339 )
+        q(   24 ) = (  -0.1666667  -0.0962250  -0.1459339 )
+
+
+     ===================================================================
+     irreducible q point #    7
+     ===================================================================
+
+     Symmetries of small group of q:  2
+
+     Number of q in the star =   12
+     List of q in the star:
+          1   0.000000000   0.192450090   0.291867841
+          2   0.000000000   0.192450090  -0.291867841
+          3  -0.166666667  -0.096225045   0.291867841
+          4   0.166666667  -0.096225045   0.291867841
+          5   0.166666667   0.096225045   0.291867841
+          6  -0.166666667   0.096225045   0.291867841
+          7   0.000000000  -0.192450090   0.291867841
+          8   0.166666667   0.096225045  -0.291867841
+          9   0.000000000  -0.192450090  -0.291867841
+         10   0.166666667  -0.096225045  -0.291867841
+         11  -0.166666667   0.096225045  -0.291867841
+         12  -0.166666667  -0.096225045  -0.291867841
+
+        q(   25 ) = (   0.0000000   0.1924501   0.2918678 )
+        q(   26 ) = (   0.0000000   0.1924501  -0.2918678 )
+        q(   27 ) = (  -0.1666667  -0.0962250   0.2918678 )
+        q(   28 ) = (   0.1666667  -0.0962250   0.2918678 )
+        q(   29 ) = (   0.1666667   0.0962250   0.2918678 )
+        q(   30 ) = (  -0.1666667   0.0962250   0.2918678 )
+        q(   31 ) = (   0.0000000  -0.1924501   0.2918678 )
+        q(   32 ) = (   0.1666667   0.0962250  -0.2918678 )
+        q(   33 ) = (   0.0000000  -0.1924501  -0.2918678 )
+        q(   34 ) = (   0.1666667  -0.0962250  -0.2918678 )
+        q(   35 ) = (  -0.1666667   0.0962250  -0.2918678 )
+        q(   36 ) = (  -0.1666667  -0.0962250  -0.2918678 )
+
+
+     ===================================================================
+     irreducible q point #    8
+     ===================================================================
+
+     Symmetries of small group of q:  4
+
+     Number of q in the star =    6
+     List of q in the star:
+          1   0.000000000   0.192450090  -0.437801761
+          2  -0.166666667  -0.096225045  -0.437801761
+          3   0.166666667  -0.096225045  -0.437801761
+          4   0.166666667   0.096225045  -0.437801761
+          5  -0.166666667   0.096225045  -0.437801761
+          6   0.000000000  -0.192450090  -0.437801761
+
+        q(   37 ) = (   0.0000000   0.1924501  -0.4378018 )
+        q(   38 ) = (  -0.1666667  -0.0962250  -0.4378018 )
+        q(   39 ) = (   0.1666667  -0.0962250  -0.4378018 )
+        q(   40 ) = (   0.1666667   0.0962250  -0.4378018 )
+        q(   41 ) = (  -0.1666667   0.0962250  -0.4378018 )
+        q(   42 ) = (   0.0000000  -0.1924501  -0.4378018 )
+
+
+     ===================================================================
+     irreducible q point #    9
+     ===================================================================
+
+     Symmetries of small group of q:  4
+
+     Number of q in the star =    6
+     List of q in the star:
+          1   0.000000000   0.384900179   0.000000000
+          2  -0.333333333  -0.192450090   0.000000000
+          3   0.333333333  -0.192450090   0.000000000
+          4   0.333333333   0.192450090   0.000000000
+          5  -0.333333333   0.192450090   0.000000000
+          6   0.000000000  -0.384900179   0.000000000
+
+        q(   43 ) = (   0.0000000   0.3849002   0.0000000 )
+        q(   44 ) = (  -0.3333333  -0.1924501   0.0000000 )
+        q(   45 ) = (   0.3333333  -0.1924501   0.0000000 )
+        q(   46 ) = (   0.3333333   0.1924501   0.0000000 )
+        q(   47 ) = (  -0.3333333   0.1924501   0.0000000 )
+        q(   48 ) = (   0.0000000  -0.3849002   0.0000000 )
+
+
+     ===================================================================
+     irreducible q point #   10
+     ===================================================================
+
+     Symmetries of small group of q:  2
+
+     Number of q in the star =   12
+     List of q in the star:
+          1   0.000000000   0.384900179   0.145933920
+          2   0.000000000   0.384900179  -0.145933920
+          3  -0.333333333  -0.192450090   0.145933920
+          4   0.333333333  -0.192450090   0.145933920
+          5   0.333333333   0.192450090   0.145933920
+          6  -0.333333333   0.192450090   0.145933920
+          7   0.000000000  -0.384900179   0.145933920
+          8   0.333333333   0.192450090  -0.145933920
+          9   0.000000000  -0.384900179  -0.145933920
+         10   0.333333333  -0.192450090  -0.145933920
+         11  -0.333333333   0.192450090  -0.145933920
+         12  -0.333333333  -0.192450090  -0.145933920
+
+        q(   49 ) = (   0.0000000   0.3849002   0.1459339 )
+        q(   50 ) = (   0.0000000   0.3849002  -0.1459339 )
+        q(   51 ) = (  -0.3333333  -0.1924501   0.1459339 )
+        q(   52 ) = (   0.3333333  -0.1924501   0.1459339 )
+        q(   53 ) = (   0.3333333   0.1924501   0.1459339 )
+        q(   54 ) = (  -0.3333333   0.1924501   0.1459339 )
+        q(   55 ) = (   0.0000000  -0.3849002   0.1459339 )
+        q(   56 ) = (   0.3333333   0.1924501  -0.1459339 )
+        q(   57 ) = (   0.0000000  -0.3849002  -0.1459339 )
+        q(   58 ) = (   0.3333333  -0.1924501  -0.1459339 )
+        q(   59 ) = (  -0.3333333   0.1924501  -0.1459339 )
+        q(   60 ) = (  -0.3333333  -0.1924501  -0.1459339 )
+
+
+     ===================================================================
+     irreducible q point #   11
+     ===================================================================
+
+     Symmetries of small group of q:  2
+
+     Number of q in the star =   12
+     List of q in the star:
+          1   0.000000000   0.384900179   0.291867841
+          2   0.000000000   0.384900179  -0.291867841
+          3  -0.333333333  -0.192450090   0.291867841
+          4   0.333333333  -0.192450090   0.291867841
+          5   0.333333333   0.192450090   0.291867841
+          6  -0.333333333   0.192450090   0.291867841
+          7   0.000000000  -0.384900179   0.291867841
+          8   0.333333333   0.192450090  -0.291867841
+          9   0.000000000  -0.384900179  -0.291867841
+         10   0.333333333  -0.192450090  -0.291867841
+         11  -0.333333333   0.192450090  -0.291867841
+         12  -0.333333333  -0.192450090  -0.291867841
+
+        q(   61 ) = (   0.0000000   0.3849002   0.2918678 )
+        q(   62 ) = (   0.0000000   0.3849002  -0.2918678 )
+        q(   63 ) = (  -0.3333333  -0.1924501   0.2918678 )
+        q(   64 ) = (   0.3333333  -0.1924501   0.2918678 )
+        q(   65 ) = (   0.3333333   0.1924501   0.2918678 )
+        q(   66 ) = (  -0.3333333   0.1924501   0.2918678 )
+        q(   67 ) = (   0.0000000  -0.3849002   0.2918678 )
+        q(   68 ) = (   0.3333333   0.1924501  -0.2918678 )
+        q(   69 ) = (   0.0000000  -0.3849002  -0.2918678 )
+        q(   70 ) = (   0.3333333  -0.1924501  -0.2918678 )
+        q(   71 ) = (  -0.3333333   0.1924501  -0.2918678 )
+        q(   72 ) = (  -0.3333333  -0.1924501  -0.2918678 )
+
+
+     ===================================================================
+     irreducible q point #   12
+     ===================================================================
+
+     Symmetries of small group of q:  4
+
+     Number of q in the star =    6
+     List of q in the star:
+          1   0.000000000   0.384900179  -0.437801761
+          2  -0.333333333  -0.192450090  -0.437801761
+          3   0.333333333  -0.192450090  -0.437801761
+          4   0.333333333   0.192450090  -0.437801761
+          5  -0.333333333   0.192450090  -0.437801761
+          6   0.000000000  -0.384900179  -0.437801761
+
+        q(   73 ) = (   0.0000000   0.3849002  -0.4378018 )
+        q(   74 ) = (  -0.3333333  -0.1924501  -0.4378018 )
+        q(   75 ) = (   0.3333333  -0.1924501  -0.4378018 )
+        q(   76 ) = (   0.3333333   0.1924501  -0.4378018 )
+        q(   77 ) = (  -0.3333333   0.1924501  -0.4378018 )
+        q(   78 ) = (   0.0000000  -0.3849002  -0.4378018 )
+
+
+     ===================================================================
+     irreducible q point #   13
+     ===================================================================
+
+     Symmetries of small group of q:  8
+          in addition sym. q -> -q+G:
+
+     Number of q in the star =    3
+     List of q in the star:
+          1   0.000000000  -0.577350269   0.000000000
+          2  -0.500000000  -0.288675135   0.000000000
+          3  -0.500000000   0.288675135   0.000000000
+
+        q(   79 ) = (   0.0000000  -0.5773503   0.0000000 )
+        q(   80 ) = (  -0.5000000  -0.2886751   0.0000000 )
+        q(   81 ) = (  -0.5000000   0.2886751   0.0000000 )
+
+
+     ===================================================================
+     irreducible q point #   14
+     ===================================================================
+
+     Symmetries of small group of q:  4
+
+     Number of q in the star =    6
+     List of q in the star:
+          1   0.000000000  -0.577350269   0.145933920
+          2   0.000000000  -0.577350269  -0.145933920
+          3  -0.500000000  -0.288675135   0.145933920
+          4  -0.500000000   0.288675135   0.145933920
+          5  -0.500000000  -0.288675135  -0.145933920
+          6  -0.500000000   0.288675135  -0.145933920
+
+        q(   82 ) = (   0.0000000  -0.5773503   0.1459339 )
+        q(   83 ) = (   0.0000000  -0.5773503  -0.1459339 )
+        q(   84 ) = (  -0.5000000  -0.2886751   0.1459339 )
+        q(   85 ) = (  -0.5000000   0.2886751   0.1459339 )
+        q(   86 ) = (  -0.5000000  -0.2886751  -0.1459339 )
+        q(   87 ) = (  -0.5000000   0.2886751  -0.1459339 )
+
+
+     ===================================================================
+     irreducible q point #   15
+     ===================================================================
+
+     Symmetries of small group of q:  4
+
+     Number of q in the star =    6
+     List of q in the star:
+          1   0.000000000  -0.577350269   0.291867841
+          2   0.000000000  -0.577350269  -0.291867841
+          3  -0.500000000  -0.288675135   0.291867841
+          4  -0.500000000   0.288675135   0.291867841
+          5  -0.500000000  -0.288675135  -0.291867841
+          6  -0.500000000   0.288675135  -0.291867841
+
+        q(   88 ) = (   0.0000000  -0.5773503   0.2918678 )
+        q(   89 ) = (   0.0000000  -0.5773503  -0.2918678 )
+        q(   90 ) = (  -0.5000000  -0.2886751   0.2918678 )
+        q(   91 ) = (  -0.5000000   0.2886751   0.2918678 )
+        q(   92 ) = (  -0.5000000  -0.2886751  -0.2918678 )
+        q(   93 ) = (  -0.5000000   0.2886751  -0.2918678 )
+
+
+     ===================================================================
+     irreducible q point #   16
+     ===================================================================
+
+     Symmetries of small group of q:  8
+          in addition sym. q -> -q+G:
+
+     Number of q in the star =    3
+     List of q in the star:
+          1   0.000000000  -0.577350269  -0.437801761
+          2  -0.500000000  -0.288675135  -0.437801761
+          3  -0.500000000   0.288675135  -0.437801761
+
+        q(   94 ) = (   0.0000000  -0.5773503  -0.4378018 )
+        q(   95 ) = (  -0.5000000  -0.2886751  -0.4378018 )
+        q(   96 ) = (  -0.5000000   0.2886751  -0.4378018 )
+
+
+     ===================================================================
+     irreducible q point #   17
+     ===================================================================
+
+     Symmetries of small group of q:  4
+
+     Number of q in the star =    6
+     List of q in the star:
+          1   0.166666667   0.288675135   0.000000000
+          2  -0.166666667   0.288675135   0.000000000
+          3   0.166666667  -0.288675135   0.000000000
+          4  -0.166666667  -0.288675135   0.000000000
+          5   0.333333333   0.000000000   0.000000000
+          6  -0.333333333   0.000000000   0.000000000
+
+        q(   97 ) = (   0.1666667   0.2886751   0.0000000 )
+        q(   98 ) = (  -0.1666667   0.2886751   0.0000000 )
+        q(   99 ) = (   0.1666667  -0.2886751   0.0000000 )
+        q(  100 ) = (  -0.1666667  -0.2886751   0.0000000 )
+        q(  101 ) = (   0.3333333   0.0000000   0.0000000 )
+        q(  102 ) = (  -0.3333333   0.0000000   0.0000000 )
+
+
+     ===================================================================
+     irreducible q point #   18
+     ===================================================================
+
+     Symmetries of small group of q:  2
+
+     Number of q in the star =   12
+     List of q in the star:
+          1   0.166666667   0.288675135   0.145933920
+          2   0.166666667   0.288675135  -0.145933920
+          3  -0.166666667   0.288675135   0.145933920
+          4   0.166666667  -0.288675135  -0.145933920
+          5  -0.166666667   0.288675135  -0.145933920
+          6  -0.166666667  -0.288675135  -0.145933920
+          7   0.333333333   0.000000000   0.145933920
+          8  -0.166666667  -0.288675135   0.145933920
+          9  -0.333333333   0.000000000   0.145933920
+         10   0.166666667  -0.288675135   0.145933920
+         11   0.333333333   0.000000000  -0.145933920
+         12  -0.333333333   0.000000000  -0.145933920
+
+        q(  103 ) = (   0.1666667   0.2886751   0.1459339 )
+        q(  104 ) = (   0.1666667   0.2886751  -0.1459339 )
+        q(  105 ) = (  -0.1666667   0.2886751   0.1459339 )
+        q(  106 ) = (   0.1666667  -0.2886751  -0.1459339 )
+        q(  107 ) = (  -0.1666667   0.2886751  -0.1459339 )
+        q(  108 ) = (  -0.1666667  -0.2886751  -0.1459339 )
+        q(  109 ) = (   0.3333333   0.0000000   0.1459339 )
+        q(  110 ) = (  -0.1666667  -0.2886751   0.1459339 )
+        q(  111 ) = (  -0.3333333   0.0000000   0.1459339 )
+        q(  112 ) = (   0.1666667  -0.2886751   0.1459339 )
+        q(  113 ) = (   0.3333333   0.0000000  -0.1459339 )
+        q(  114 ) = (  -0.3333333   0.0000000  -0.1459339 )
+
+
+     ===================================================================
+     irreducible q point #   19
+     ===================================================================
+
+     Symmetries of small group of q:  2
+
+     Number of q in the star =   12
+     List of q in the star:
+          1   0.166666667   0.288675135   0.291867841
+          2   0.166666667   0.288675135  -0.291867841
+          3  -0.166666667   0.288675135   0.291867841
+          4   0.166666667  -0.288675135  -0.291867841
+          5  -0.166666667   0.288675135  -0.291867841
+          6  -0.166666667  -0.288675135  -0.291867841
+          7   0.333333333   0.000000000   0.291867841
+          8  -0.166666667  -0.288675135   0.291867841
+          9  -0.333333333   0.000000000   0.291867841
+         10   0.166666667  -0.288675135   0.291867841
+         11   0.333333333   0.000000000  -0.291867841
+         12  -0.333333333   0.000000000  -0.291867841
+
+        q(  115 ) = (   0.1666667   0.2886751   0.2918678 )
+        q(  116 ) = (   0.1666667   0.2886751  -0.2918678 )
+        q(  117 ) = (  -0.1666667   0.2886751   0.2918678 )
+        q(  118 ) = (   0.1666667  -0.2886751  -0.2918678 )
+        q(  119 ) = (  -0.1666667   0.2886751  -0.2918678 )
+        q(  120 ) = (  -0.1666667  -0.2886751  -0.2918678 )
+        q(  121 ) = (   0.3333333   0.0000000   0.2918678 )
+        q(  122 ) = (  -0.1666667  -0.2886751   0.2918678 )
+        q(  123 ) = (  -0.3333333   0.0000000   0.2918678 )
+        q(  124 ) = (   0.1666667  -0.2886751   0.2918678 )
+        q(  125 ) = (   0.3333333   0.0000000  -0.2918678 )
+        q(  126 ) = (  -0.3333333   0.0000000  -0.2918678 )
+
+
+     ===================================================================
+     irreducible q point #   20
+     ===================================================================
+
+     Symmetries of small group of q:  4
+
+     Number of q in the star =    6
+     List of q in the star:
+          1   0.166666667   0.288675135  -0.437801761
+          2  -0.166666667   0.288675135  -0.437801761
+          3   0.166666667  -0.288675135   0.437801761
+          4  -0.166666667  -0.288675135   0.437801761
+          5   0.333333333   0.000000000  -0.437801761
+          6  -0.333333333   0.000000000  -0.437801761
+
+        q(  127 ) = (   0.1666667   0.2886751  -0.4378018 )
+        q(  128 ) = (  -0.1666667   0.2886751  -0.4378018 )
+        q(  129 ) = (   0.1666667  -0.2886751   0.4378018 )
+        q(  130 ) = (  -0.1666667  -0.2886751   0.4378018 )
+        q(  131 ) = (   0.3333333   0.0000000  -0.4378018 )
+        q(  132 ) = (  -0.3333333   0.0000000  -0.4378018 )
+
+
+     ===================================================================
+     irreducible q point #   21
+     ===================================================================
+
+     Symmetries of small group of q:  2
+
+     Number of q in the star =   12
+     List of q in the star:
+          1   0.166666667   0.481125224   0.000000000
+          2   0.333333333   0.384900179   0.000000000
+          3  -0.166666667   0.481125224   0.000000000
+          4   0.166666667  -0.481125224   0.000000000
+          5  -0.166666667  -0.481125224   0.000000000
+          6   0.500000000   0.096225045   0.000000000
+          7   0.500000000  -0.096225045   0.000000000
+          8  -0.333333333  -0.384900179   0.000000000
+          9  -0.500000000  -0.096225045   0.000000000
+         10   0.333333333  -0.384900179   0.000000000
+         11  -0.500000000   0.096225045   0.000000000
+         12  -0.333333333   0.384900179   0.000000000
+
+        q(  133 ) = (   0.1666667   0.4811252   0.0000000 )
+        q(  134 ) = (   0.3333333   0.3849002   0.0000000 )
+        q(  135 ) = (  -0.1666667   0.4811252   0.0000000 )
+        q(  136 ) = (   0.1666667  -0.4811252   0.0000000 )
+        q(  137 ) = (  -0.1666667  -0.4811252   0.0000000 )
+        q(  138 ) = (   0.5000000   0.0962250   0.0000000 )
+        q(  139 ) = (   0.5000000  -0.0962250   0.0000000 )
+        q(  140 ) = (  -0.3333333  -0.3849002   0.0000000 )
+        q(  141 ) = (  -0.5000000  -0.0962250   0.0000000 )
+        q(  142 ) = (   0.3333333  -0.3849002   0.0000000 )
+        q(  143 ) = (  -0.5000000   0.0962250   0.0000000 )
+        q(  144 ) = (  -0.3333333   0.3849002   0.0000000 )
+
+
+     ===================================================================
+     irreducible q point #   22
+     ===================================================================
+
+     Symmetries of small group of q:  1
+
+     Number of q in the star =   24
+     List of q in the star:
+          1   0.166666667   0.481125224   0.145933920
+          2   0.166666667   0.481125224  -0.145933920
+          3   0.333333333   0.384900179  -0.145933920
+          4   0.333333333   0.384900179   0.145933920
+          5  -0.166666667   0.481125224   0.145933920
+          6   0.166666667  -0.481125224  -0.145933920
+          7  -0.166666667   0.481125224  -0.145933920
+          8  -0.166666667  -0.481125224  -0.145933920
+          9   0.500000000   0.096225045   0.145933920
+         10   0.500000000  -0.096225045   0.145933920
+         11  -0.333333333  -0.384900179   0.145933920
+         12  -0.500000000  -0.096225045   0.145933920
+         13  -0.166666667  -0.481125224   0.145933920
+         14   0.333333333  -0.384900179   0.145933920
+         15   0.166666667  -0.481125224   0.145933920
+         16  -0.500000000   0.096225045   0.145933920
+         17  -0.333333333   0.384900179   0.145933920
+         18   0.333333333  -0.384900179  -0.145933920
+         19   0.500000000   0.096225045  -0.145933920
+         20  -0.333333333   0.384900179  -0.145933920
+         21  -0.333333333  -0.384900179  -0.145933920
+         22   0.500000000  -0.096225045  -0.145933920
+         23  -0.500000000  -0.096225045  -0.145933920
+         24  -0.500000000   0.096225045  -0.145933920
+
+        q(  145 ) = (   0.1666667   0.4811252   0.1459339 )
+        q(  146 ) = (   0.1666667   0.4811252  -0.1459339 )
+        q(  147 ) = (   0.3333333   0.3849002  -0.1459339 )
+        q(  148 ) = (   0.3333333   0.3849002   0.1459339 )
+        q(  149 ) = (  -0.1666667   0.4811252   0.1459339 )
+        q(  150 ) = (   0.1666667  -0.4811252  -0.1459339 )
+        q(  151 ) = (  -0.1666667   0.4811252  -0.1459339 )
+        q(  152 ) = (  -0.1666667  -0.4811252  -0.1459339 )
+        q(  153 ) = (   0.5000000   0.0962250   0.1459339 )
+        q(  154 ) = (   0.5000000  -0.0962250   0.1459339 )
+        q(  155 ) = (  -0.3333333  -0.3849002   0.1459339 )
+        q(  156 ) = (  -0.5000000  -0.0962250   0.1459339 )
+        q(  157 ) = (  -0.1666667  -0.4811252   0.1459339 )
+        q(  158 ) = (   0.3333333  -0.3849002   0.1459339 )
+        q(  159 ) = (   0.1666667  -0.4811252   0.1459339 )
+        q(  160 ) = (  -0.5000000   0.0962250   0.1459339 )
+        q(  161 ) = (  -0.3333333   0.3849002   0.1459339 )
+        q(  162 ) = (   0.3333333  -0.3849002  -0.1459339 )
+        q(  163 ) = (   0.5000000   0.0962250  -0.1459339 )
+        q(  164 ) = (  -0.3333333   0.3849002  -0.1459339 )
+        q(  165 ) = (  -0.3333333  -0.3849002  -0.1459339 )
+        q(  166 ) = (   0.5000000  -0.0962250  -0.1459339 )
+        q(  167 ) = (  -0.5000000  -0.0962250  -0.1459339 )
+        q(  168 ) = (  -0.5000000   0.0962250  -0.1459339 )
+
+
+     ===================================================================
+     irreducible q point #   23
+     ===================================================================
+
+     Symmetries of small group of q:  1
+
+     Number of q in the star =   24
+     List of q in the star:
+          1   0.166666667   0.481125224   0.291867841
+          2   0.166666667   0.481125224  -0.291867841
+          3   0.333333333   0.384900179  -0.291867841
+          4   0.333333333   0.384900179   0.291867841
+          5  -0.166666667   0.481125224   0.291867841
+          6   0.166666667  -0.481125224  -0.291867841
+          7  -0.166666667   0.481125224  -0.291867841
+          8  -0.166666667  -0.481125224  -0.291867841
+          9   0.500000000   0.096225045   0.291867841
+         10   0.500000000  -0.096225045   0.291867841
+         11  -0.333333333  -0.384900179   0.291867841
+         12  -0.500000000  -0.096225045   0.291867841
+         13  -0.166666667  -0.481125224   0.291867841
+         14   0.333333333  -0.384900179   0.291867841
+         15   0.166666667  -0.481125224   0.291867841
+         16  -0.500000000   0.096225045   0.291867841
+         17  -0.333333333   0.384900179   0.291867841
+         18   0.333333333  -0.384900179  -0.291867841
+         19   0.500000000   0.096225045  -0.291867841
+         20  -0.333333333   0.384900179  -0.291867841
+         21  -0.333333333  -0.384900179  -0.291867841
+         22   0.500000000  -0.096225045  -0.291867841
+         23  -0.500000000  -0.096225045  -0.291867841
+         24  -0.500000000   0.096225045  -0.291867841
+
+        q(  169 ) = (   0.1666667   0.4811252   0.2918678 )
+        q(  170 ) = (   0.1666667   0.4811252  -0.2918678 )
+        q(  171 ) = (   0.3333333   0.3849002  -0.2918678 )
+        q(  172 ) = (   0.3333333   0.3849002   0.2918678 )
+        q(  173 ) = (  -0.1666667   0.4811252   0.2918678 )
+        q(  174 ) = (   0.1666667  -0.4811252  -0.2918678 )
+        q(  175 ) = (  -0.1666667   0.4811252  -0.2918678 )
+        q(  176 ) = (  -0.1666667  -0.4811252  -0.2918678 )
+        q(  177 ) = (   0.5000000   0.0962250   0.2918678 )
+        q(  178 ) = (   0.5000000  -0.0962250   0.2918678 )
+        q(  179 ) = (  -0.3333333  -0.3849002   0.2918678 )
+        q(  180 ) = (  -0.5000000  -0.0962250   0.2918678 )
+        q(  181 ) = (  -0.1666667  -0.4811252   0.2918678 )
+        q(  182 ) = (   0.3333333  -0.3849002   0.2918678 )
+        q(  183 ) = (   0.1666667  -0.4811252   0.2918678 )
+        q(  184 ) = (  -0.5000000   0.0962250   0.2918678 )
+        q(  185 ) = (  -0.3333333   0.3849002   0.2918678 )
+        q(  186 ) = (   0.3333333  -0.3849002  -0.2918678 )
+        q(  187 ) = (   0.5000000   0.0962250  -0.2918678 )
+        q(  188 ) = (  -0.3333333   0.3849002  -0.2918678 )
+        q(  189 ) = (  -0.3333333  -0.3849002  -0.2918678 )
+        q(  190 ) = (   0.5000000  -0.0962250  -0.2918678 )
+        q(  191 ) = (  -0.5000000  -0.0962250  -0.2918678 )
+        q(  192 ) = (  -0.5000000   0.0962250  -0.2918678 )
+
+
+     ===================================================================
+     irreducible q point #   24
+     ===================================================================
+
+     Symmetries of small group of q:  2
+
+     Number of q in the star =   12
+     List of q in the star:
+          1   0.166666667   0.481125224  -0.437801761
+          2   0.333333333   0.384900179   0.437801761
+          3  -0.166666667   0.481125224  -0.437801761
+          4   0.166666667  -0.481125224   0.437801761
+          5  -0.166666667  -0.481125224   0.437801761
+          6   0.500000000   0.096225045  -0.437801761
+          7   0.500000000  -0.096225045  -0.437801761
+          8  -0.333333333  -0.384900179  -0.437801761
+          9  -0.500000000  -0.096225045  -0.437801761
+         10   0.333333333  -0.384900179  -0.437801761
+         11  -0.500000000   0.096225045  -0.437801761
+         12  -0.333333333   0.384900179  -0.437801761
+
+        q(  193 ) = (   0.1666667   0.4811252  -0.4378018 )
+        q(  194 ) = (   0.3333333   0.3849002   0.4378018 )
+        q(  195 ) = (  -0.1666667   0.4811252  -0.4378018 )
+        q(  196 ) = (   0.1666667  -0.4811252   0.4378018 )
+        q(  197 ) = (  -0.1666667  -0.4811252   0.4378018 )
+        q(  198 ) = (   0.5000000   0.0962250  -0.4378018 )
+        q(  199 ) = (   0.5000000  -0.0962250  -0.4378018 )
+        q(  200 ) = (  -0.3333333  -0.3849002  -0.4378018 )
+        q(  201 ) = (  -0.5000000  -0.0962250  -0.4378018 )
+        q(  202 ) = (   0.3333333  -0.3849002  -0.4378018 )
+        q(  203 ) = (  -0.5000000   0.0962250  -0.4378018 )
+        q(  204 ) = (  -0.3333333   0.3849002  -0.4378018 )
+
+
+     ===================================================================
+     irreducible q point #   25
+     ===================================================================
+
+     Symmetries of small group of q: 12
+
+     Number of q in the star =    2
+     List of q in the star:
+          1   0.333333333   0.577350269   0.000000000
+          2  -0.333333333  -0.577350269   0.000000000
+
+        q(  205 ) = (   0.3333333   0.5773503   0.0000000 )
+        q(  206 ) = (  -0.3333333  -0.5773503   0.0000000 )
+
+
+     ===================================================================
+     irreducible q point #   26
+     ===================================================================
+
+     Symmetries of small group of q:  6
+
+     Number of q in the star =    4
+     List of q in the star:
+          1   0.333333333   0.577350269   0.145933920
+          2   0.333333333   0.577350269  -0.145933920
+          3  -0.333333333  -0.577350269   0.145933920
+          4  -0.333333333   0.577350269  -0.145933920
+
+        q(  207 ) = (   0.3333333   0.5773503   0.1459339 )
+        q(  208 ) = (   0.3333333   0.5773503  -0.1459339 )
+        q(  209 ) = (  -0.3333333  -0.5773503   0.1459339 )
+        q(  210 ) = (  -0.3333333   0.5773503  -0.1459339 )
+
+
+     ===================================================================
+     irreducible q point #   27
+     ===================================================================
+
+     Symmetries of small group of q:  6
+
+     Number of q in the star =    4
+     List of q in the star:
+          1   0.333333333   0.577350269   0.291867841
+          2   0.333333333   0.577350269  -0.291867841
+          3  -0.333333333  -0.577350269   0.291867841
+          4  -0.333333333   0.577350269  -0.291867841
+
+        q(  211 ) = (   0.3333333   0.5773503   0.2918678 )
+        q(  212 ) = (   0.3333333   0.5773503  -0.2918678 )
+        q(  213 ) = (  -0.3333333  -0.5773503   0.2918678 )
+        q(  214 ) = (  -0.3333333   0.5773503  -0.2918678 )
+
+
+     ===================================================================
+     irreducible q point #   28
+     ===================================================================
+
+     Symmetries of small group of q: 12
+
+     Number of q in the star =    2
+     List of q in the star:
+          1   0.333333333   0.577350269  -0.437801761
+          2  -0.333333333  -0.577350269  -0.437801761
+
+        q(  215 ) = (   0.3333333   0.5773503  -0.4378018 )
+        q(  216 ) = (  -0.3333333  -0.5773503  -0.4378018 )
+
+     Writing epmatq on .epb files
+
+
+     The .epb files have been correctly written
+
+
+     Band disentanglement is used: nbndsub =    5
+     Use zone-centred Wigner-Seitz cells 
+     Number of WS vectors for electrons      301
+     Number of WS vectors for phonons      301
+     Number of WS vectors for electron-phonon      301
+     Maximum number of cores for efficient parallelization     2709
+     Results may improve by using use_ws == .TRUE. 
+
+     Velocity matrix elements calculated
+ 
+ 
+     Bloch2wane:          1 /        216
+     Bloch2wane:          2 /        216
+     Bloch2wane:          3 /        216
+     Bloch2wane:          4 /        216
+     Bloch2wane:          5 /        216
+     Bloch2wane:          6 /        216
+     Bloch2wane:          7 /        216
+     Bloch2wane:          8 /        216
+     Bloch2wane:          9 /        216
+     Bloch2wane:         10 /        216
+     Bloch2wane:         11 /        216
+     Bloch2wane:         12 /        216
+     Bloch2wane:         13 /        216
+     Bloch2wane:         14 /        216
+     Bloch2wane:         15 /        216
+     Bloch2wane:         16 /        216
+     Bloch2wane:         17 /        216
+     Bloch2wane:         18 /        216
+     Bloch2wane:         19 /        216
+     Bloch2wane:         20 /        216
+     Bloch2wane:         21 /        216
+     Bloch2wane:         22 /        216
+     Bloch2wane:         23 /        216
+     Bloch2wane:         24 /        216
+     Bloch2wane:         25 /        216
+     Bloch2wane:         26 /        216
+     Bloch2wane:         27 /        216
+     Bloch2wane:         28 /        216
+     Bloch2wane:         29 /        216
+     Bloch2wane:         30 /        216
+     Bloch2wane:         31 /        216
+     Bloch2wane:         32 /        216
+     Bloch2wane:         33 /        216
+     Bloch2wane:         34 /        216
+     Bloch2wane:         35 /        216
+     Bloch2wane:         36 /        216
+     Bloch2wane:         37 /        216
+     Bloch2wane:         38 /        216
+     Bloch2wane:         39 /        216
+     Bloch2wane:         40 /        216
+     Bloch2wane:         41 /        216
+     Bloch2wane:         42 /        216
+     Bloch2wane:         43 /        216
+     Bloch2wane:         44 /        216
+     Bloch2wane:         45 /        216
+     Bloch2wane:         46 /        216
+     Bloch2wane:         47 /        216
+     Bloch2wane:         48 /        216
+     Bloch2wane:         49 /        216
+     Bloch2wane:         50 /        216
+     Bloch2wane:         51 /        216
+     Bloch2wane:         52 /        216
+     Bloch2wane:         53 /        216
+     Bloch2wane:         54 /        216
+     Bloch2wane:         55 /        216
+     Bloch2wane:         56 /        216
+     Bloch2wane:         57 /        216
+     Bloch2wane:         58 /        216
+     Bloch2wane:         59 /        216
+     Bloch2wane:         60 /        216
+     Bloch2wane:         61 /        216
+     Bloch2wane:         62 /        216
+     Bloch2wane:         63 /        216
+     Bloch2wane:         64 /        216
+     Bloch2wane:         65 /        216
+     Bloch2wane:         66 /        216
+     Bloch2wane:         67 /        216
+     Bloch2wane:         68 /        216
+     Bloch2wane:         69 /        216
+     Bloch2wane:         70 /        216
+     Bloch2wane:         71 /        216
+     Bloch2wane:         72 /        216
+     Bloch2wane:         73 /        216
+     Bloch2wane:         74 /        216
+     Bloch2wane:         75 /        216
+     Bloch2wane:         76 /        216
+     Bloch2wane:         77 /        216
+     Bloch2wane:         78 /        216
+     Bloch2wane:         79 /        216
+     Bloch2wane:         80 /        216
+     Bloch2wane:         81 /        216
+     Bloch2wane:         82 /        216
+     Bloch2wane:         83 /        216
+     Bloch2wane:         84 /        216
+     Bloch2wane:         85 /        216
+     Bloch2wane:         86 /        216
+     Bloch2wane:         87 /        216
+     Bloch2wane:         88 /        216
+     Bloch2wane:         89 /        216
+     Bloch2wane:         90 /        216
+     Bloch2wane:         91 /        216
+     Bloch2wane:         92 /        216
+     Bloch2wane:         93 /        216
+     Bloch2wane:         94 /        216
+     Bloch2wane:         95 /        216
+     Bloch2wane:         96 /        216
+     Bloch2wane:         97 /        216
+     Bloch2wane:         98 /        216
+     Bloch2wane:         99 /        216
+     Bloch2wane:        100 /        216
+     Bloch2wane:        101 /        216
+     Bloch2wane:        102 /        216
+     Bloch2wane:        103 /        216
+     Bloch2wane:        104 /        216
+     Bloch2wane:        105 /        216
+     Bloch2wane:        106 /        216
+     Bloch2wane:        107 /        216
+     Bloch2wane:        108 /        216
+     Bloch2wane:        109 /        216
+     Bloch2wane:        110 /        216
+     Bloch2wane:        111 /        216
+     Bloch2wane:        112 /        216
+     Bloch2wane:        113 /        216
+     Bloch2wane:        114 /        216
+     Bloch2wane:        115 /        216
+     Bloch2wane:        116 /        216
+     Bloch2wane:        117 /        216
+     Bloch2wane:        118 /        216
+     Bloch2wane:        119 /        216
+     Bloch2wane:        120 /        216
+     Bloch2wane:        121 /        216
+     Bloch2wane:        122 /        216
+     Bloch2wane:        123 /        216
+     Bloch2wane:        124 /        216
+     Bloch2wane:        125 /        216
+     Bloch2wane:        126 /        216
+     Bloch2wane:        127 /        216
+     Bloch2wane:        128 /        216
+     Bloch2wane:        129 /        216
+     Bloch2wane:        130 /        216
+     Bloch2wane:        131 /        216
+     Bloch2wane:        132 /        216
+     Bloch2wane:        133 /        216
+     Bloch2wane:        134 /        216
+     Bloch2wane:        135 /        216
+     Bloch2wane:        136 /        216
+     Bloch2wane:        137 /        216
+     Bloch2wane:        138 /        216
+     Bloch2wane:        139 /        216
+     Bloch2wane:        140 /        216
+     Bloch2wane:        141 /        216
+     Bloch2wane:        142 /        216
+     Bloch2wane:        143 /        216
+     Bloch2wane:        144 /        216
+     Bloch2wane:        145 /        216
+     Bloch2wane:        146 /        216
+     Bloch2wane:        147 /        216
+     Bloch2wane:        148 /        216
+     Bloch2wane:        149 /        216
+     Bloch2wane:        150 /        216
+     Bloch2wane:        151 /        216
+     Bloch2wane:        152 /        216
+     Bloch2wane:        153 /        216
+     Bloch2wane:        154 /        216
+     Bloch2wane:        155 /        216
+     Bloch2wane:        156 /        216
+     Bloch2wane:        157 /        216
+     Bloch2wane:        158 /        216
+     Bloch2wane:        159 /        216
+     Bloch2wane:        160 /        216
+     Bloch2wane:        161 /        216
+     Bloch2wane:        162 /        216
+     Bloch2wane:        163 /        216
+     Bloch2wane:        164 /        216
+     Bloch2wane:        165 /        216
+     Bloch2wane:        166 /        216
+     Bloch2wane:        167 /        216
+     Bloch2wane:        168 /        216
+     Bloch2wane:        169 /        216
+     Bloch2wane:        170 /        216
+     Bloch2wane:        171 /        216
+     Bloch2wane:        172 /        216
+     Bloch2wane:        173 /        216
+     Bloch2wane:        174 /        216
+     Bloch2wane:        175 /        216
+     Bloch2wane:        176 /        216
+     Bloch2wane:        177 /        216
+     Bloch2wane:        178 /        216
+     Bloch2wane:        179 /        216
+     Bloch2wane:        180 /        216
+     Bloch2wane:        181 /        216
+     Bloch2wane:        182 /        216
+     Bloch2wane:        183 /        216
+     Bloch2wane:        184 /        216
+     Bloch2wane:        185 /        216
+     Bloch2wane:        186 /        216
+     Bloch2wane:        187 /        216
+     Bloch2wane:        188 /        216
+     Bloch2wane:        189 /        216
+     Bloch2wane:        190 /        216
+     Bloch2wane:        191 /        216
+     Bloch2wane:        192 /        216
+     Bloch2wane:        193 /        216
+     Bloch2wane:        194 /        216
+     Bloch2wane:        195 /        216
+     Bloch2wane:        196 /        216
+     Bloch2wane:        197 /        216
+     Bloch2wane:        198 /        216
+     Bloch2wane:        199 /        216
+     Bloch2wane:        200 /        216
+     Bloch2wane:        201 /        216
+     Bloch2wane:        202 /        216
+     Bloch2wane:        203 /        216
+     Bloch2wane:        204 /        216
+     Bloch2wane:        205 /        216
+     Bloch2wane:        206 /        216
+     Bloch2wane:        207 /        216
+     Bloch2wane:        208 /        216
+     Bloch2wane:        209 /        216
+     Bloch2wane:        210 /        216
+     Bloch2wane:        211 /        216
+     Bloch2wane:        212 /        216
+     Bloch2wane:        213 /        216
+     Bloch2wane:        214 /        216
+     Bloch2wane:        215 /        216
+     Bloch2wane:        216 /        216
+ 
+     Bloch2wanp:          1 /        301
+     Bloch2wanp:          2 /        301
+     Bloch2wanp:          3 /        301
+     Bloch2wanp:          4 /        301
+     Bloch2wanp:          5 /        301
+     Bloch2wanp:          6 /        301
+     Bloch2wanp:          7 /        301
+     Bloch2wanp:          8 /        301
+     Bloch2wanp:          9 /        301
+     Bloch2wanp:         10 /        301
+     Bloch2wanp:         11 /        301
+     Bloch2wanp:         12 /        301
+     Bloch2wanp:         13 /        301
+     Bloch2wanp:         14 /        301
+     Bloch2wanp:         15 /        301
+     Bloch2wanp:         16 /        301
+     Bloch2wanp:         17 /        301
+     Bloch2wanp:         18 /        301
+     Bloch2wanp:         19 /        301
+     Bloch2wanp:         20 /        301
+     Bloch2wanp:         21 /        301
+     Bloch2wanp:         22 /        301
+     Bloch2wanp:         23 /        301
+     Bloch2wanp:         24 /        301
+     Bloch2wanp:         25 /        301
+     Bloch2wanp:         26 /        301
+     Bloch2wanp:         27 /        301
+     Bloch2wanp:         28 /        301
+     Bloch2wanp:         29 /        301
+     Bloch2wanp:         30 /        301
+     Bloch2wanp:         31 /        301
+     Bloch2wanp:         32 /        301
+     Bloch2wanp:         33 /        301
+     Bloch2wanp:         34 /        301
+     Bloch2wanp:         35 /        301
+     Bloch2wanp:         36 /        301
+     Bloch2wanp:         37 /        301
+     Bloch2wanp:         38 /        301
+     Bloch2wanp:         39 /        301
+     Bloch2wanp:         40 /        301
+     Bloch2wanp:         41 /        301
+     Bloch2wanp:         42 /        301
+     Bloch2wanp:         43 /        301
+     Bloch2wanp:         44 /        301
+     Bloch2wanp:         45 /        301
+     Bloch2wanp:         46 /        301
+     Bloch2wanp:         47 /        301
+     Bloch2wanp:         48 /        301
+     Bloch2wanp:         49 /        301
+     Bloch2wanp:         50 /        301
+     Bloch2wanp:         51 /        301
+     Bloch2wanp:         52 /        301
+     Bloch2wanp:         53 /        301
+     Bloch2wanp:         54 /        301
+     Bloch2wanp:         55 /        301
+     Bloch2wanp:         56 /        301
+     Bloch2wanp:         57 /        301
+     Bloch2wanp:         58 /        301
+     Bloch2wanp:         59 /        301
+     Bloch2wanp:         60 /        301
+     Bloch2wanp:         61 /        301
+     Bloch2wanp:         62 /        301
+     Bloch2wanp:         63 /        301
+     Bloch2wanp:         64 /        301
+     Bloch2wanp:         65 /        301
+     Bloch2wanp:         66 /        301
+     Bloch2wanp:         67 /        301
+     Bloch2wanp:         68 /        301
+     Bloch2wanp:         69 /        301
+     Bloch2wanp:         70 /        301
+     Bloch2wanp:         71 /        301
+     Bloch2wanp:         72 /        301
+     Bloch2wanp:         73 /        301
+     Bloch2wanp:         74 /        301
+     Bloch2wanp:         75 /        301
+     Bloch2wanp:         76 /        301
+     Bloch2wanp:         77 /        301
+     Bloch2wanp:         78 /        301
+     Bloch2wanp:         79 /        301
+     Bloch2wanp:         80 /        301
+     Bloch2wanp:         81 /        301
+     Bloch2wanp:         82 /        301
+     Bloch2wanp:         83 /        301
+     Bloch2wanp:         84 /        301
+     Bloch2wanp:         85 /        301
+     Bloch2wanp:         86 /        301
+     Bloch2wanp:         87 /        301
+     Bloch2wanp:         88 /        301
+     Bloch2wanp:         89 /        301
+     Bloch2wanp:         90 /        301
+     Bloch2wanp:         91 /        301
+     Bloch2wanp:         92 /        301
+     Bloch2wanp:         93 /        301
+     Bloch2wanp:         94 /        301
+     Bloch2wanp:         95 /        301
+     Bloch2wanp:         96 /        301
+     Bloch2wanp:         97 /        301
+     Bloch2wanp:         98 /        301
+     Bloch2wanp:         99 /        301
+     Bloch2wanp:        100 /        301
+     Bloch2wanp:        101 /        301
+     Bloch2wanp:        102 /        301
+     Bloch2wanp:        103 /        301
+     Bloch2wanp:        104 /        301
+     Bloch2wanp:        105 /        301
+     Bloch2wanp:        106 /        301
+     Bloch2wanp:        107 /        301
+     Bloch2wanp:        108 /        301
+     Bloch2wanp:        109 /        301
+     Bloch2wanp:        110 /        301
+     Bloch2wanp:        111 /        301
+     Bloch2wanp:        112 /        301
+     Bloch2wanp:        113 /        301
+     Bloch2wanp:        114 /        301
+     Bloch2wanp:        115 /        301
+     Bloch2wanp:        116 /        301
+     Bloch2wanp:        117 /        301
+     Bloch2wanp:        118 /        301
+     Bloch2wanp:        119 /        301
+     Bloch2wanp:        120 /        301
+     Bloch2wanp:        121 /        301
+     Bloch2wanp:        122 /        301
+     Bloch2wanp:        123 /        301
+     Bloch2wanp:        124 /        301
+     Bloch2wanp:        125 /        301
+     Bloch2wanp:        126 /        301
+     Bloch2wanp:        127 /        301
+     Bloch2wanp:        128 /        301
+     Bloch2wanp:        129 /        301
+     Bloch2wanp:        130 /        301
+     Bloch2wanp:        131 /        301
+     Bloch2wanp:        132 /        301
+     Bloch2wanp:        133 /        301
+     Bloch2wanp:        134 /        301
+     Bloch2wanp:        135 /        301
+     Bloch2wanp:        136 /        301
+     Bloch2wanp:        137 /        301
+     Bloch2wanp:        138 /        301
+     Bloch2wanp:        139 /        301
+     Bloch2wanp:        140 /        301
+     Bloch2wanp:        141 /        301
+     Bloch2wanp:        142 /        301
+     Bloch2wanp:        143 /        301
+     Bloch2wanp:        144 /        301
+     Bloch2wanp:        145 /        301
+     Bloch2wanp:        146 /        301
+     Bloch2wanp:        147 /        301
+     Bloch2wanp:        148 /        301
+     Bloch2wanp:        149 /        301
+     Bloch2wanp:        150 /        301
+     Bloch2wanp:        151 /        301
+     Bloch2wanp:        152 /        301
+     Bloch2wanp:        153 /        301
+     Bloch2wanp:        154 /        301
+     Bloch2wanp:        155 /        301
+     Bloch2wanp:        156 /        301
+     Bloch2wanp:        157 /        301
+     Bloch2wanp:        158 /        301
+     Bloch2wanp:        159 /        301
+     Bloch2wanp:        160 /        301
+     Bloch2wanp:        161 /        301
+     Bloch2wanp:        162 /        301
+     Bloch2wanp:        163 /        301
+     Bloch2wanp:        164 /        301
+     Bloch2wanp:        165 /        301
+     Bloch2wanp:        166 /        301
+     Bloch2wanp:        167 /        301
+     Bloch2wanp:        168 /        301
+     Bloch2wanp:        169 /        301
+     Bloch2wanp:        170 /        301
+     Bloch2wanp:        171 /        301
+     Bloch2wanp:        172 /        301
+     Bloch2wanp:        173 /        301
+     Bloch2wanp:        174 /        301
+     Bloch2wanp:        175 /        301
+     Bloch2wanp:        176 /        301
+     Bloch2wanp:        177 /        301
+     Bloch2wanp:        178 /        301
+     Bloch2wanp:        179 /        301
+     Bloch2wanp:        180 /        301
+     Bloch2wanp:        181 /        301
+     Bloch2wanp:        182 /        301
+     Bloch2wanp:        183 /        301
+     Bloch2wanp:        184 /        301
+     Bloch2wanp:        185 /        301
+     Bloch2wanp:        186 /        301
+     Bloch2wanp:        187 /        301
+     Bloch2wanp:        188 /        301
+     Bloch2wanp:        189 /        301
+     Bloch2wanp:        190 /        301
+     Bloch2wanp:        191 /        301
+     Bloch2wanp:        192 /        301
+     Bloch2wanp:        193 /        301
+     Bloch2wanp:        194 /        301
+     Bloch2wanp:        195 /        301
+     Bloch2wanp:        196 /        301
+     Bloch2wanp:        197 /        301
+     Bloch2wanp:        198 /        301
+     Bloch2wanp:        199 /        301
+     Bloch2wanp:        200 /        301
+     Bloch2wanp:        201 /        301
+     Bloch2wanp:        202 /        301
+     Bloch2wanp:        203 /        301
+     Bloch2wanp:        204 /        301
+     Bloch2wanp:        205 /        301
+     Bloch2wanp:        206 /        301
+     Bloch2wanp:        207 /        301
+     Bloch2wanp:        208 /        301
+     Bloch2wanp:        209 /        301
+     Bloch2wanp:        210 /        301
+     Bloch2wanp:        211 /        301
+     Bloch2wanp:        212 /        301
+     Bloch2wanp:        213 /        301
+     Bloch2wanp:        214 /        301
+     Bloch2wanp:        215 /        301
+     Bloch2wanp:        216 /        301
+     Bloch2wanp:        217 /        301
+     Bloch2wanp:        218 /        301
+     Bloch2wanp:        219 /        301
+     Bloch2wanp:        220 /        301
+     Bloch2wanp:        221 /        301
+     Bloch2wanp:        222 /        301
+     Bloch2wanp:        223 /        301
+     Bloch2wanp:        224 /        301
+     Bloch2wanp:        225 /        301
+     Bloch2wanp:        226 /        301
+     Bloch2wanp:        227 /        301
+     Bloch2wanp:        228 /        301
+     Bloch2wanp:        229 /        301
+     Bloch2wanp:        230 /        301
+     Bloch2wanp:        231 /        301
+     Bloch2wanp:        232 /        301
+     Bloch2wanp:        233 /        301
+     Bloch2wanp:        234 /        301
+     Bloch2wanp:        235 /        301
+     Bloch2wanp:        236 /        301
+     Bloch2wanp:        237 /        301
+     Bloch2wanp:        238 /        301
+     Bloch2wanp:        239 /        301
+     Bloch2wanp:        240 /        301
+     Bloch2wanp:        241 /        301
+     Bloch2wanp:        242 /        301
+     Bloch2wanp:        243 /        301
+     Bloch2wanp:        244 /        301
+     Bloch2wanp:        245 /        301
+     Bloch2wanp:        246 /        301
+     Bloch2wanp:        247 /        301
+     Bloch2wanp:        248 /        301
+     Bloch2wanp:        249 /        301
+     Bloch2wanp:        250 /        301
+     Bloch2wanp:        251 /        301
+     Bloch2wanp:        252 /        301
+     Bloch2wanp:        253 /        301
+     Bloch2wanp:        254 /        301
+     Bloch2wanp:        255 /        301
+     Bloch2wanp:        256 /        301
+     Bloch2wanp:        257 /        301
+     Bloch2wanp:        258 /        301
+     Bloch2wanp:        259 /        301
+     Bloch2wanp:        260 /        301
+     Bloch2wanp:        261 /        301
+     Bloch2wanp:        262 /        301
+     Bloch2wanp:        263 /        301
+     Bloch2wanp:        264 /        301
+     Bloch2wanp:        265 /        301
+     Bloch2wanp:        266 /        301
+     Bloch2wanp:        267 /        301
+     Bloch2wanp:        268 /        301
+     Bloch2wanp:        269 /        301
+     Bloch2wanp:        270 /        301
+     Bloch2wanp:        271 /        301
+     Bloch2wanp:        272 /        301
+     Bloch2wanp:        273 /        301
+     Bloch2wanp:        274 /        301
+     Bloch2wanp:        275 /        301
+     Bloch2wanp:        276 /        301
+     Bloch2wanp:        277 /        301
+     Bloch2wanp:        278 /        301
+     Bloch2wanp:        279 /        301
+     Bloch2wanp:        280 /        301
+     Bloch2wanp:        281 /        301
+     Bloch2wanp:        282 /        301
+     Bloch2wanp:        283 /        301
+     Bloch2wanp:        284 /        301
+     Bloch2wanp:        285 /        301
+     Bloch2wanp:        286 /        301
+     Bloch2wanp:        287 /        301
+     Bloch2wanp:        288 /        301
+     Bloch2wanp:        289 /        301
+     Bloch2wanp:        290 /        301
+     Bloch2wanp:        291 /        301
+     Bloch2wanp:        292 /        301
+     Bloch2wanp:        293 /        301
+     Bloch2wanp:        294 /        301
+     Bloch2wanp:        295 /        301
+     Bloch2wanp:        296 /        301
+     Bloch2wanp:        297 /        301
+     Bloch2wanp:        298 /        301
+     Bloch2wanp:        299 /        301
+     Bloch2wanp:        300 /        301
+     Bloch2wanp:        301 /        301
+
+     Writing Hamiltonian, Dynamical matrix and EP vertex in Wann rep to file
+
+     ===================================================================
+     Memory usage:  VmHWM =       493Mb
+                   VmPeak =       721Mb
+     ===================================================================
+     
+     Using uniform q-mesh:   20  20  20
+     Size of q point mesh for interpolation:       8000
+     Using uniform MP k-mesh:   20  20  20
+     Size of k point mesh for interpolation:        968
+     Max number of k points per pool:              968
+
+     Fermi energy coarse grid =   7.593467 eV
+
+     Fermi energy is calculated from the fine k-mesh: Ef =   7.469685 eV
+
+     ===================================================================
+
+              ibndmin =     3  ebndmin =     0.520
+              ibndmax =     5  ebndmax =     0.578
+
+
+     Number of ep-matrix elements per pool :        39204 ~=  306.28 Kb (@ 8 bytes/ DP)
+     Number selected, total            100            100
+     Number selected, total            200            201
+     Number selected, total            300            301
+     Number selected, total            400            401
+     Number selected, total            500            501
+     Number selected, total            600            601
+     Number selected, total            700            701
+     Number selected, total            800            801
+     Number selected, total            900            901
+     Number selected, total           1000           1001
+     Number selected, total           1100           1101
+     Number selected, total           1200           1201
+     Number selected, total           1300           1301
+     Number selected, total           1400           1401
+     Number selected, total           1500           1506
+     Number selected, total           1600           1606
+     Number selected, total           1700           1706
+     Number selected, total           1800           1806
+     Number selected, total           1900           1910
+     Number selected, total           2000           2010
+     Number selected, total           2100           2110
+     Number selected, total           2200           2210
+     Number selected, total           2300           2310
+     Number selected, total           2400           2410
+     Number selected, total           2500           2510
+     Number selected, total           2600           2610
+     Number selected, total           2700           2710
+     Number selected, total           2800           2810
+     Number selected, total           2900           2910
+     Number selected, total           3000           3010
+     Number selected, total           3100           3110
+     Number selected, total           3200           3210
+     Number selected, total           3300           3310
+     Number selected, total           3400           3410
+     Number selected, total           3500           3510
+     Number selected, total           3600           3610
+     Number selected, total           3700           3710
+     Number selected, total           3800           3810
+     Number selected, total           3900           3910
+     Number selected, total           4000           4010
+     Number selected, total           4100           4110
+     Number selected, total           4200           4210
+     Number selected, total           4300           4310
+     Number selected, total           4400           4410
+     Number selected, total           4500           4510
+     Number selected, total           4600           4610
+     Number selected, total           4700           4710
+     Number selected, total           4800           4810
+     Number selected, total           4900           4910
+     Number selected, total           5000           5010
+     Number selected, total           5100           5110
+     Number selected, total           5200           5211
+     Number selected, total           5300           5312
+     Number selected, total           5400           5412
+     Number selected, total           5500           5512
+     Number selected, total           5600           5618
+     Number selected, total           5700           5718
+     Number selected, total           5800           5818
+     Number selected, total           5900           5918
+     Number selected, total           6000           6031
+     Number selected, total           6100           6131
+     Number selected, total           6200           6231
+     Number selected, total           6300           6331
+     Number selected, total           6400           6451
+     Number selected, total           6500           6554
+     Number selected, total           6600           6654
+     Number selected, total           6700           6754
+     Number selected, total           6800           6854
+     Number selected, total           6900           6954
+     Number selected, total           7000           7054
+     Number selected, total           7100           7154
+     Number selected, total           7200           7254
+     Number selected, total           7300           7356
+     Number selected, total           7400           7456
+     Number selected, total           7500           7556
+     Number selected, total           7600           7656
+     Number selected, total           7700           7759
+     Number selected, total           7800           7859
+     Number selected, total           7900           7959
+     We only need to compute     7941 q-points
+      
+
+     Nr. of irreducible k-points on the uniform grid:       484
+
+
+     Finish mapping k+sign*q onto the fine irreducibe k-mesh and writing .ikmap file
+
+
+     Nr irreducible k-points within the Fermi shell =       120 out of       484
+
+     Progression iq (fine) =        100/      7941
+     Progression iq (fine) =        200/      7941
+     Progression iq (fine) =        300/      7941
+     Progression iq (fine) =        400/      7941
+     Progression iq (fine) =        500/      7941
+     Progression iq (fine) =        600/      7941
+     Progression iq (fine) =        700/      7941
+     Progression iq (fine) =        800/      7941
+     Progression iq (fine) =        900/      7941
+     Progression iq (fine) =       1000/      7941
+     Progression iq (fine) =       1100/      7941
+     Progression iq (fine) =       1200/      7941
+     Progression iq (fine) =       1300/      7941
+     Progression iq (fine) =       1400/      7941
+     Progression iq (fine) =       1500/      7941
+     Progression iq (fine) =       1600/      7941
+     Progression iq (fine) =       1700/      7941
+     Progression iq (fine) =       1800/      7941
+     Progression iq (fine) =       1900/      7941
+     Progression iq (fine) =       2000/      7941
+     Progression iq (fine) =       2100/      7941
+     Progression iq (fine) =       2200/      7941
+     Progression iq (fine) =       2300/      7941
+     Progression iq (fine) =       2400/      7941
+     Progression iq (fine) =       2500/      7941
+     Progression iq (fine) =       2600/      7941
+     Progression iq (fine) =       2700/      7941
+     Progression iq (fine) =       2800/      7941
+     Progression iq (fine) =       2900/      7941
+     Progression iq (fine) =       3000/      7941
+     Progression iq (fine) =       3100/      7941
+     Progression iq (fine) =       3200/      7941
+     Progression iq (fine) =       3300/      7941
+     Progression iq (fine) =       3400/      7941
+     Progression iq (fine) =       3500/      7941
+     Progression iq (fine) =       3600/      7941
+     Progression iq (fine) =       3700/      7941
+     Progression iq (fine) =       3800/      7941
+     Progression iq (fine) =       3900/      7941
+     Progression iq (fine) =       4000/      7941
+     Progression iq (fine) =       4100/      7941
+     Progression iq (fine) =       4200/      7941
+     Progression iq (fine) =       4300/      7941
+     Progression iq (fine) =       4400/      7941
+     Progression iq (fine) =       4500/      7941
+     Progression iq (fine) =       4600/      7941
+     Progression iq (fine) =       4700/      7941
+     Progression iq (fine) =       4800/      7941
+     Progression iq (fine) =       4900/      7941
+     Progression iq (fine) =       5000/      7941
+     Progression iq (fine) =       5100/      7941
+     Progression iq (fine) =       5200/      7941
+     Progression iq (fine) =       5300/      7941
+     Progression iq (fine) =       5400/      7941
+     Progression iq (fine) =       5500/      7941
+     Progression iq (fine) =       5600/      7941
+     Progression iq (fine) =       5700/      7941
+     Progression iq (fine) =       5800/      7941
+     Progression iq (fine) =       5900/      7941
+     Progression iq (fine) =       6000/      7941
+     Progression iq (fine) =       6100/      7941
+     Progression iq (fine) =       6200/      7941
+     Progression iq (fine) =       6300/      7941
+     Progression iq (fine) =       6400/      7941
+     Progression iq (fine) =       6500/      7941
+     Progression iq (fine) =       6600/      7941
+     Progression iq (fine) =       6700/      7941
+     Progression iq (fine) =       6800/      7941
+     Progression iq (fine) =       6900/      7941
+     Progression iq (fine) =       7000/      7941
+     Progression iq (fine) =       7100/      7941
+     Progression iq (fine) =       7200/      7941
+     Progression iq (fine) =       7300/      7941
+     Progression iq (fine) =       7400/      7941
+     Progression iq (fine) =       7500/      7941
+     Progression iq (fine) =       7600/      7941
+     Progression iq (fine) =       7700/      7941
+     Progression iq (fine) =       7800/      7941
+     Progression iq (fine) =       7900/      7941
+                  Fermi level (eV) =    0.746968454050793D+01
+     DOS(states/spin/eV/Unit Cell) =    0.407195571046613D+00
+            Electron smearing (eV) =    0.100000000000000D+00
+                 Fermi window (eV) =    0.400000000000000D+00
+      
+     Finish writing .ephmat files
+
+     ===================================================================
+     Memory usage:  VmHWM =       493Mb
+                   VmPeak =       721Mb
+     ===================================================================
+
+
+     ===================================================================
+     Solve anisotropic Eliashberg equations
+     ===================================================================
+
+
+     Finish reading freq file
+
+                  Fermi level (eV) =     7.4696845405E+00
+     DOS(states/spin/eV/Unit Cell) =     4.0719557105E-01
+            Electron smearing (eV) =     1.0000000000E-01
+                 Fermi window (eV) =     4.0000000000E-01
+     Nr irreducible k-points within the Fermi shell =       120 out of       484
+
+           2 bands within the Fermi window
+
+
+     Finish reading egnv file 
+
+
+     Max nr of q-points =      1790
+
+
+     Finish reading ikmap files
+
+
+     Start reading .ephmat files
+
+
+     Finish reading .ephmat files
+
+     lambda_max =             6.5562738   lambda_k_max =             1.7915587
+ 
+     Electron-phonon coupling strength =    0.8098986
+ 
+     Estimated Allen-Dynes Tc =    19.535595 K for muc =    0.16000
+  
+     Estimated BCS superconducting gap =     0.002963 eV
+  
+    
+     temp(  1) =     15.00000 K
+    
+     Solve anisotropic Eliashberg equations on imaginary-axis
+    
+     Total number of frequency points nsiw(     1) =    123
+     Cutoff frequency wscut =     1.0030
+    
+
+     Size of allocated memory per pool: ~=    1.6389 Gb
+        iter      ethr        znormi [eV]    deltai [eV]
+          1   2.552756E+00   1.799003E+00   3.395540E-03
+          2   3.118826E-01   1.796182E+00   4.034917E-03
+          3   4.282637E-02   1.792140E+00   4.606212E-03
+          4   8.014718E-02   1.787588E+00   5.168647E-03
+          5   2.612439E-01   1.771317E+00   6.788761E-03
+          6   2.934523E-01   1.785372E+00   5.356526E-03
+          7   1.032758E-01   1.780229E+00   5.945854E-03
+          8   3.311315E-03   1.780618E+00   5.921724E-03
+          9   1.972870E-03   1.780854E+00   5.903367E-03
+         10   3.040413E-02   1.781958E+00   5.762929E-03
+         11   5.736177E-02   1.779151E+00   6.093035E-03
+         12   2.186998E-03   1.778915E+00   6.113241E-03
+         13   1.408150E-03   1.778800E+00   6.129923E-03
+         14   6.491006E-03   1.778265E+00   6.198598E-03
+         15   1.177282E-03   1.778186E+00   6.211201E-03
+         16   1.482670E-02   1.777391E+00   6.299348E-03
+         17   6.868688E-03   1.777122E+00   6.310618E-03
+         18   1.928218E-03   1.776982E+00   6.333006E-03
+         19   5.251500E-03   1.776744E+00   6.363206E-03
+         20   2.581616E-03   1.776573E+00   6.404140E-03
+         21   2.594544E-03   1.776507E+00   6.412247E-03
+         22   6.471406E-03   1.776237E+00   6.442742E-03
+         23   2.080700E-03   1.776353E+00   6.440892E-03
+         24   3.030798E-03   1.776185E+00   6.458860E-03
+         25   8.809605E-03   1.775821E+00   6.502193E-03
+         26   1.358949E-03   1.775892E+00   6.496987E-03
+         27   1.957645E-03   1.775818E+00   6.505516E-03
+         28   3.101260E-03   1.775681E+00   6.522723E-03
+         29   3.652040E-03   1.775677E+00   6.527154E-03
+         30   4.974872E-03   1.775516E+00   6.551282E-03
+         31   1.509281E-03   1.775511E+00   6.546388E-03
+         32   1.090664E-03   1.775582E+00   6.539610E-03
+         33   1.458871E-03   1.775495E+00   6.548020E-03
+         34   1.468928E-03   1.775419E+00   6.557001E-03
+         35   4.137707E-04   1.775439E+00   6.556773E-03
+         36   6.848534E-04   1.775426E+00   6.560355E-03
+         37   2.731276E-03   1.775264E+00   6.576747E-03
+         38   4.975657E-04   1.775249E+00   6.579211E-03
+         39   3.537812E-03   1.775091E+00   6.597434E-03
+         40   1.238324E-03   1.775212E+00   6.588365E-03
+         41   2.717512E-03   1.775083E+00   6.601835E-03
+         42   1.801283E-03   1.775010E+00   6.611060E-03
+         43   1.156044E-03   1.774971E+00   6.616057E-03
+         44   3.401877E-04   1.774986E+00   6.614521E-03
+         45   8.978370E-04   1.774946E+00   6.619158E-03
+         46   2.199856E-03   1.774832E+00   6.631056E-03
+         47   8.244819E-04   1.774797E+00   6.635204E-03
+         48   1.772853E-03   1.774696E+00   6.646213E-03
+         49   1.527225E-04   1.774709E+00   6.645775E-03
+         50   1.642524E-04   1.774707E+00   6.646507E-03
+         51   1.701480E-03   1.774626E+00   6.655502E-03
+         52   1.683686E-03   1.774551E+00   6.664567E-03
+         53   4.510235E-04   1.774575E+00   6.661851E-03
+         54   4.883628E-04   1.774602E+00   6.659227E-03
+         55   7.558916E-04   1.774568E+00   6.663283E-03
+         56   6.533316E-04   1.774532E+00   6.666995E-03
+         57   1.044280E-03   1.774475E+00   6.672881E-03
+         58   3.929435E-04   1.774497E+00   6.670565E-03
+         59   1.866473E-04   1.774521E+00   6.668978E-03
+         60   1.110006E-03   1.774453E+00   6.675610E-03
+         61   1.286039E-03   1.774374E+00   6.683284E-03
+         62   2.081144E-04   1.774364E+00   6.684384E-03
+         63   6.441686E-05   1.774375E+00   6.683988E-03
+     Convergence was reached in nsiter =     63
+ 
+
+     Size of allocated memory per pool: ~=    1.6383 Gb
+     iaxis_imag   :   4149.79s CPU   4192.39s WALL (       1 calls)
+ 
+    
+     Pade approximant of anisotropic Eliashberg equations from imaginary-axis to real-axis
+     Cutoff frequency wscut =     1.0000
+    
+        pade Re[znorm] [eV] Re[delta] [eV]
+        110   1.733112E+00   5.670540E-03
+ 
+     Convergence was reached for N =    110 Pade approximants
+ 
+     raxis_pade   :      4.71s CPU      4.91s WALL (       1 calls)
+ 
+     itemp =   1   total cpu time :           4197.30 secs
+ 
+
+     Unfolding on the coarse grid
+     elphon_wrap  :   3067.27s CPU   3154.24s WALL (       1 calls)
+
+     INITIALIZATION: 
+
+     set_drhoc    :      2.19s CPU      2.21s WALL (     217 calls)
+     init_vloc    :      0.00s CPU      0.00s WALL (       1 calls)
+     init_us_1    :      0.01s CPU      0.01s WALL (       2 calls)
+
+
+
+     Electron-Phonon interpolation
+     ephwann      :   1763.13s CPU   2236.34s WALL (       1 calls)
+     ep-interp    :   1721.45s CPU   2181.20s WALL (    7941 calls)
+
+     Ham: step 1  :      0.00s CPU      0.00s WALL (       1 calls)
+     Ham: step 2  :      0.01s CPU      0.01s WALL (       1 calls)
+     ep: step 1   :      0.50s CPU      0.50s WALL (    1944 calls)
+     ep: step 2   :   6193.62s CPU   6709.69s WALL (       1 calls)
+     DynW2B       :      1.28s CPU      1.35s WALL (    7941 calls)
+     HamW2B       :    196.18s CPU    202.94s WALL ( 7688340 calls)
+     ephW2Bp      :    399.98s CPU    821.49s WALL (    7941 calls)
+     ephW2B       :     35.60s CPU     36.61s WALL (  213840 calls)
+     vmewan2bloch :    926.38s CPU    953.97s WALL ( 7686888 calls)
+     vmewan2bloch :    926.38s CPU    953.97s WALL ( 7686888 calls)
+
+     ELIASHBERG   :   4430.97s CPU   4474.21s WALL (       1 calls)
+
+     Total program execution
+     EPW          :      2h34m CPU      2h45m WALL
+
+     ===============================================================================
+     The functionality-dependent EPW.bib file was created with suggested citations. 
+     Please consider citing the papers listed in EPW.bib.                           
+     ===============================================================================
+                                                                                    
